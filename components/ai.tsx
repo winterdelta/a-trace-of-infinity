@@ -31,8 +31,8 @@ export default function Chat() {
 							<div className={styles.messageBody}>
 								<div className={styles.mIDb}>Atheno</div>
 								<div className={styles.messageTextb}>
-									Ask anything you want about the Winterdelta, the
-									company&apos;s productisation...
+									Ask anything you want about the Winterdelta, the Nort-3 or
+									anything else.
 								</div>
 							</div>
 						</div>
@@ -102,7 +102,7 @@ export default function Chat() {
 							setInput(
 								path === "99034458529"
 									? "Critically evaluate the candidate"
-									: "Analyse the events"
+									: "What are your products?"
 							)
 						}
 						className={styles.AIHelper}
@@ -110,7 +110,7 @@ export default function Chat() {
 						<div className={ibm.className}>
 							{path === "99034458529"
 								? "Critically evaluate the candidate"
-								: "Analyse the events"}
+								: "What are your products?"}
 						</div>
 						<div className={styles.AIHelperi}>
 							<Microscope size={16} />
@@ -123,7 +123,7 @@ export default function Chat() {
 					type='text'
 					value={input}
 					onChange={handleInputChange}
-					placeholder='Assess...'
+					placeholder='Message...'
 					className={`${styles.textarea} ${ibm.className}`}
 				/>
 				<button type='submit' className={styles.submit}>

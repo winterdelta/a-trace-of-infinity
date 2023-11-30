@@ -50,7 +50,6 @@
 
 .trackArt {
 	padding-top: unset;
-	/* height: 100px; */
 	height: calc(100vw - 60px);
 	margin-bottom: 40px;
 }
@@ -947,7 +946,7 @@ A .AILinkContainer {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin: 0px 0px 10px 0px;
+	/* margin: 0px 0px 10px 0px; */
 	padding: 0px 10px 40px 10px;
 	/* border-left: none;
 	border-right: none; */
@@ -955,8 +954,8 @@ A .AILinkContainer {
 
 .chat {
 	/* min-height: 500px; */
-	max-height: calc(100vh - 60px);
-	width: calc(100vw - 40px);
+	max-height: calc(100vh - 30px);
+	width: calc(100vw - 20px);
 	border-radius: 20px;
 	border: 1px solid white;
 	display: flex;
@@ -964,7 +963,7 @@ A .AILinkContainer {
 	align-items: center;
 	flex-direction: column;
 	/* background-color: var(--bg-raised); */
-	margin: 10px 0px 220px 0px;
+	margin: 10px 0px 0px 0px;
 }
 
 .chat {
@@ -975,7 +974,7 @@ A .AILinkContainer {
 
 @media (min-width: 1300px) {
 	.chat {
-		margin: 0px;
+		margin-bottom: 20px;
 		/* height: calc(100vh - 60px); */
 		filter: none;
 		backdrop-filter: blur(100px);
@@ -992,7 +991,7 @@ A .AILinkContainer {
 		margin: 0;
 		padding: 0;
 		width: 35vw;
-		padding: 30px 30px 30px 30px;
+		padding: 30px 20px 30px 30px;
 	}
 }
 
@@ -1195,7 +1194,7 @@ A .AILinkContainer {
 	}
 
 	.chat {
-		margin-bottom: 100px;
+		margin-bottom: 40px;
 	}
 
 	.conversation {

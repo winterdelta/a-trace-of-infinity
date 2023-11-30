@@ -1,0 +1,26 @@
+.widget {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: row;
+	border-radius: 20px;
+}
+
+.link {
+	padding-left: 4px;
+}
+
+.tagline {
+	padding-left: 4px;
+	/* color: var(--dark-font-grey); */
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.name {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: row;
+}
