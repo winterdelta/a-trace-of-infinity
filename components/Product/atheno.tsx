@@ -10,9 +10,8 @@ export default function Home() {
 				<div className={styles.icon}>
 					<AssemblyReference size={16} />
 				</div>
-				<div className={styles.link}>auth</div>
+				<div className={styles.link}>On</div>
 			</Link>
-			{/* <div className={styles.features}>Features:</div> */}
 			<div className={styles.feature}>0 - $8.00 / month</div>
 			<div className={styles.feature}>voice</div>
 			<div className={styles.feature}>multi-lingual</div>
@@ -22,7 +21,7 @@ export default function Home() {
 			<div className={styles.feature}>GPT-4</div>
 			<div className={styles.dolby}>
 				<Image alt='' src='dolby-icon-grey.svg' height={24} width={24} />
-				<div className={styles.text}>Dolby Enhanced</div>
+				<div className={styles.text}>Dolby Enhance</div>
 			</div>
 		</div>
 	);

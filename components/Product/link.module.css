@@ -15,6 +15,7 @@
 
 .widget {
 	filter: drop-shadow(0px 0px 50px white);
+	z-index: -10000;
 }
 
 @media (min-width: 1300px) {
@@ -65,10 +66,11 @@
 }
 
 .features div {
-	padding: 20px;
+	padding: 00px;
 }
 
-.feature {
+.feature,
+.dolby {
 	white-space: nowrap;
 	border: 1px solid var(--shallow-deep-grey);
 	display: flex;
@@ -97,6 +99,8 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: 20px;
+	/* margin-bottom: 100px; */
 	/* border: 1px solid var(--outline); */
 }
 

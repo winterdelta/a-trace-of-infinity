@@ -3,7 +3,11 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import HUD from "@/components/HUD/HUD";
 
-const ibm = IBM_Plex_Sans({ subsets: ["latin"], weight: ["500"] });
+const ibm = IBM_Plex_Sans({
+	subsets: ["latin"],
+	style: ["normal", "italic"],
+	weight: ["500", "700"],
+});
 
 export const metadata: Metadata = {
 	title: "Winterdelta",

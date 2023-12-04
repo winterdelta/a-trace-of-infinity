@@ -31,8 +31,8 @@ export default function Chat() {
 							<div className={styles.messageBody}>
 								<div className={styles.mIDb}>AI</div>
 								<div className={styles.messageTextb}>
-									Ask anything you want about company, customer onboarding, the
-									Nort-3 or anything else.
+									Ask anything you want about the company, customer and account
+									onboarding, the Nort-3 or anything else.
 								</div>
 							</div>
 						</div>
@@ -45,7 +45,7 @@ export default function Chat() {
 									</div>
 								</span>
 								<div className={styles.messageBody}>
-									<div className={styles.mIDb}>AI</div>
+									<div className={styles.mIDb}>Client Assistant</div>
 									<div className={styles.messageTextb}>
 										The following has been contextually pre-loaded:
 									</div>
@@ -86,7 +86,7 @@ export default function Chat() {
 										</div>
 									</span>
 									<div className={styles.messageBody}>
-										<div className={styles.mIDb}>AI</div>
+										<div className={styles.mIDb}>Client Assistant</div>
 										<div className={styles.messageTextb}>{m.content}</div>
 									</div>
 								</div>
@@ -102,7 +102,7 @@ export default function Chat() {
 							setInput(
 								path === "99034458529"
 									? "Critically evaluate the candidate"
-									: "What are your products?"
+									: "What is your contact email address?"
 							)
 						}
 						className={styles.AIHelper}
@@ -110,7 +110,7 @@ export default function Chat() {
 						<div className={ibm.className}>
 							{path === "99034458529"
 								? "Critically evaluate the candidate"
-								: "What are your products?"}
+								: "What is your contact email address?"}
 						</div>
 						<div className={styles.AIHelperi}>
 							<Microscope size={16} />

@@ -483,7 +483,7 @@
 	/* width: calc(100% - 60px);
 	margin: 0px 30px 0px 30px; */
 	/* margin: 0px 30px 0px 30px; */
-	margin: 0px -30px 30px -20px;
+	margin: 0px -30px 30px 0px;
 	height: 1px;
 	background-color: var(--outline);
 	display: flex;
@@ -640,7 +640,6 @@
 	width: fit-content;
 	height: 28px;
 	border: 1px solid var(--outline);
-	/* margin-top: 10px; */
 	padding-left: 2px;
 	padding-right: 6px;
 	color: var(--deep-grey);
@@ -651,30 +650,17 @@
 .diEnhancei {
 	width: 20px;
 	margin-left: 10px;
-	/* height: 8px; */
 	border: 1px solid var(--outline);
-	/* margin-top: 10px;
-	padding-left: 2px;
-	padding-right: 6px; */
 	padding: 2px 0px 2px 0px;
-	/* color: var(--deep-grey); */
 	height: 32px;
-	/* border-radius: 8px;
-	letter-spacing: -0.5px;
-	padding: 2px;
-	margin-left: 10px; */
 }
 
 .dg {
-	/* padding: unset; */
-	/* border-radius: 100px; */
-	/* width: 28px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-left: 10px;
 	padding-left: 4px;
-	/* border: none; */
 }
 
 .audioLabels {
@@ -684,10 +670,6 @@
 	flex-direction: row;
 	width: 100%;
 }
-
-/* .diEnhance {
-	margin-left: 10px;
-} */
 
 .listen {
 	display: flex;
@@ -704,13 +686,10 @@
 .dgi {
 	height: 24px;
 	width: 24px;
-	/* margin-right: 10px; */
-	/* border: 1px solid var(--outline); */
 	background-color: white;
 	border-radius: 50%;
 	overflow: hidden;
 	position: relative;
-	/* top: 300px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
