@@ -1,4 +1,4 @@
-:root {
+/* :root {
 	--foreground-rgb: 255, 255, 255;
 	--background-start-rgb: 0, 0, 0;
 	--background-end-rgb: 0, 0, 0;
@@ -42,16 +42,16 @@
 
 	--ai: white;
 	--ai-bg: #000000;
-	/* --user: #0084ff; */
+	--user: #0084ff;
 	--user: white;
 	--user-bg: #000000;
 
 	--font: white;
 	--ai-raised: #0d0f1a;
 	--image-border: #0084ff;
-}
+} */
 
-/* :root {
+:root {
 	--max-width: 1100px;
 	--border-radius: 12px;
 	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -112,7 +112,7 @@
 	--font: black;
 	--ai-raised: #0d0f1a;
 	--image-border: #dfdfdf;
-} */
+}
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -152,7 +152,7 @@
 		--dark-font-grey: #727272;
 		--blue-action: white;
 
-		--outline: #18181b;
+		--outline: #2d2d2e;
 		--opacity: transparent;
 		--bg-raised: rgb(10, 10, 10);
 		--secondary-text: #232327;
@@ -190,10 +190,11 @@ body {
 	background: linear-gradient(
 			to bottom,
 			transparent,
-			rgb(var(--background-end-rgb)) /* rgb(var(--background-start-rgb)) */
+			/* rgb(var(--background-end-rgb))  */ rgb(var(--background-start-rgb))
 		)
 		rgb(var(--background-start-rgb));
 	font-size: 12px;
+	height: 100vh;
 }
 
 body::-webkit-scrollbar {

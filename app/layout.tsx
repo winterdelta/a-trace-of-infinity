@@ -7,7 +7,8 @@ const ibm = IBM_Plex_Sans({ subsets: ["latin"], weight: ["500"] });
 
 export const metadata: Metadata = {
 	title: "Winterdelta",
-	description: "Advanced productisation - AI R&D for technological interfaces.",
+	// description: "Specialised productisation - AI R&D for technological interfaces.",
+	description: "Specialised R&D - consumer-grade R&D.",
 };
 
 export default function RootLayout({

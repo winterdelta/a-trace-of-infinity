@@ -5,7 +5,11 @@ export default function HUD() {
 	return (
 		<div>
 			<div className={styles.winterdelta}>
-				<Link href='/'>W∆</Link>
+				<Link className={styles.logo} href='/'>
+					W∆
+				</Link>
+				{/* <div className={styles.divider}>/</div> */}
+				{/* <span className={styles.build}>A Trace of Infinity</span> */}
 			</div>
 		</div>
 	);

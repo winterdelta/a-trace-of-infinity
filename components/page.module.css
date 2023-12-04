@@ -968,7 +968,6 @@ A .AILinkContainer {
 
 .chat {
 	border: 1px solid var(--outline);
-	/* filter: drop-shadow(0px 0px 50px #1c1c22); */
 	background-color: black;
 }
 
@@ -991,7 +990,7 @@ A .AILinkContainer {
 		margin: 0;
 		padding: 0;
 		width: 35vw;
-		padding: 30px 20px 30px 30px;
+		padding: 30px 10px 30px 30px;
 	}
 }
 
