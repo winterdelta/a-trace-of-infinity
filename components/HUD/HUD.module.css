@@ -17,7 +17,6 @@
 		background: linear-gradient(180deg, black 40%, transparent 100%);
 	}
 } */
-`
 .build {
 	display: flex;
 	justify-content: center;
@@ -30,19 +29,15 @@
 
 .logo {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	color: white;
+	justify-content: center;
+	align-items: center;
+	color: black;
 	padding: 10px;
-	border: 2px solid var(--outline);
-	height: 100px;
-	width: calc(100px);
-	/* background-color: red; */
-	border-radius: 20px;
-	/* background-color: white; */
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
 	z-index: 1000;
-	backdrop-filter: blur(40px);
-	-webkit-backdrop-filter: blur(40px);
 }
 
 .divider {

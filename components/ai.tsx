@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
-import { Cognitive, Microscope, SendFilled } from "@carbon/icons-react";
+import { ChartRelationship, Cognitive, SendFilled } from "@carbon/icons-react";
 import { useChat } from "ai/react";
 import { usePathname } from "next/navigation";
 
@@ -70,7 +70,8 @@ export default function Chat() {
 								<div className={styles.message}>
 									<div className={styles.messageHuman}>
 										<div className={styles.messageHumani}>
-											<Microscope size={16} />
+											<ChartRelationship size={16} />
+											{/* <Microscope size={16} /> */}
 										</div>
 										<div className={styles.messageBodyH}>
 											<div className={styles.mID}>You</div>
@@ -102,7 +103,7 @@ export default function Chat() {
 							setInput(
 								path === "99034458529"
 									? "Critically evaluate the candidate"
-									: "What is your contact email address?"
+									: "Who can I contact or email for client services?"
 							)
 						}
 						className={styles.AIHelper}
@@ -110,10 +111,10 @@ export default function Chat() {
 						<div className={ibm.className}>
 							{path === "99034458529"
 								? "Critically evaluate the candidate"
-								: "What is your contact email address?"}
+								: "Who can I contact or email for client services?"}
 						</div>
 						<div className={styles.AIHelperi}>
-							<Microscope size={16} />
+							<ChartRelationship size={16} />
 						</div>
 					</button>
 				</div>

@@ -1,31 +1,23 @@
 import styles from "./page.module.css";
 import AI from "@/components/ai";
 import Atheno from "@/components/Product/atheno";
-import {
-	IBM_Plex_Sans_Arabic,
-	Noto_Nastaliq_Urdu,
-	IBM_Plex_Serif,
-} from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import Image from "next/image";
 
-const noto = IBM_Plex_Sans_Arabic({ subsets: ["arabic"], weight: ["100"] });
-
-const urdu = Noto_Nastaliq_Urdu({ subsets: ["arabic"], weight: ["700"] });
-
-const trace = IBM_Plex_Serif({
+const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
-	style: ["italic"],
-	weight: ["300"],
+	style: ["normal"],
+	weight: ["500", "700"],
 });
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
 			{/* <div className={styles.consumer}> */}
-			{/* <div className={styles.item}> */}
-			{/* <span className={styles.bold}>Off-the-shelf</span>: */}
-			{/* AIs to use right now: */}
-			{/* </div> */}
+			<div className={styles.item}>
+				{/* <span className={styles.bold}>Off-the-shelf</span>: */}
+				Pre-built AIs:
+			</div>
 			{/* </div> */}
 			{/* <div className={styles.blurb}>
 				<div>Off-the-shelf: Pre-built apps ready for use. </div>
@@ -47,7 +39,6 @@ export default function Home() {
 			<div className={styles.widgets}>
 				<Atheno />
 			</div>
-
 			<div className={styles.imageContainer}>
 				<Image
 					src='/M2.jpg'
@@ -62,7 +53,6 @@ export default function Home() {
 					sizes='(max-width: 768px) 250px, 400px'
 				/>
 			</div>
-
 			{/* <div className={styles.uses}>
 				<div className={styles.use}>
 					Airbreather
@@ -94,13 +84,24 @@ export default function Home() {
 				aim.
 			</div> */}
 			<div className={styles.divider} />
+			<div className={styles.item}>
+				{/* <span className={styles.bold}>Off-the-shelf</span>: */}
+				State-of-the-art AIs:
+			</div>
+			<div className={styles.title}>
+				<div className={styles.styllcraft}>
+					{/* <div className={mono.className}>HYDRA</div> */}
+					<div className={styles.dividerHeader} />
+					{/* <div className={ibm.className}>craft</div> */}
+				</div>
+			</div>
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade apps:</span> Spun up
-						with sophisticated configuration. Deploy State-of-the-art. Request
-						new interfaces injected with AIs. Dock new technologies. Capture and
-						advance the capitalisation of pre-existing and new markets.
+						<span className={styles.bold}>Enterprise-grade apps</span> Spun up
+						with sophisticated configurations. Request new interfaces injected
+						with AIs. Dock new technologies into legacy stacks. Capture and
+						advance the capitalisation of pre-existing or new markets.
 					</div>
 					<div className={styles.row}>
 						<div className={styles.price}>$100K+ quote</div>
@@ -137,9 +138,9 @@ export default function Home() {
 				{/* <div className={styles.divider} /> */}
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Experimental-grade:</span> Bleeding
-						Edge R&D designed to push the manifold of what is physically
-						feasible - delivered as fast as feasible.
+						<span className={styles.bold}>R&D / Bleeding Edge</span> Designed to
+						push the manifold of what is physically feasible - delivered as fast
+						as feasible.
 					</div>
 					<div className={styles.price}>Asset Securities Quote</div>
 				</div>
@@ -166,9 +167,7 @@ export default function Home() {
 			<div className={styles.chatContainer}>
 				<AI />
 			</div>
-			<div className={styles.marsLabel}>
-				&apos;A TRACE OF INFINITY&apos; BUILD
-			</div>
+			<div className={styles.marsLabel}>A TRACE OF INFINITY BUILD</div>
 		</main>
 	);
 }

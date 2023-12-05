@@ -72,7 +72,7 @@
 	font-size: 8px;
 	letter-spacing: 2px;
 	font-weight: 500;
-	padding-left: 10px;
+	padding-left: 20px;
 	font-weight: bold;
 	padding-bottom: 40px;
 	padding-top: 20px;
@@ -163,6 +163,7 @@
 .divider {
 	width: 100vw;
 	height: 1px;
+	margin-bottom: 10px;
 	/* background-color: var(--outline); */
 	/* margin-top: 20px;
 	margin-bottom: 20px; */
@@ -187,7 +188,10 @@
 .item {
 	font-size: 16px;
 	/* width: 25vw; */
-	margin-bottom: 20px;
+	/* margin-left: 10px; */
+	margin-bottom: 10px;
+	margin-left: 10px;
+	/* margin-top: 10px; */
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -266,8 +270,7 @@
 
 .bold {
 	font-weight: 700;
-	font-style: italic;
-	/* text-decoration: underline; */
+	padding-bottom: 5px;
 }
 
 .consumer {
@@ -332,4 +335,33 @@
 	.itemRow {
 		flex-direction: row;
 	}
+}
+
+.styllcraft {
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: row;
+	letter-spacing: 1em;
+	padding: 10px 0px 10px 10px;
+	font-size: 8px;
+	/* font-style: italic; */
+	line-height: 2.2em;
+	font-weight: bold;
+	width: calc(100% - 20px);
+	padding-bottom: 10px;
+}
+
+.dividerHeader {
+	height: 20px;
+	margin: 0px 12px 0px 4px;
+	width: 2px;
+	background-color: var(--outline);
+}
+
+.title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-top: -20px;
 }
