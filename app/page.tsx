@@ -1,8 +1,7 @@
+import Playlist from "@/components/Playlist/Playlist";
 import styles from "./page.module.css";
 import AI from "@/components/ai";
-import Atheno from "@/components/Product/atheno";
 import { IBM_Plex_Mono } from "next/font/google";
-import Image from "next/image";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -13,11 +12,13 @@ const mono = IBM_Plex_Mono({
 export default function Home() {
 	return (
 		<main className={styles.main}>
+			<div className={styles.fadeLayer} />
+			<Playlist />
 			{/* <div className={styles.consumer}> */}
-			<div className={styles.item}>
-				{/* <span className={styles.bold}>Off-the-shelf</span>: */}
-				Pre-built AIs:
-			</div>
+			{/* <div className={styles.item}> */}
+			{/* <span className={styles.bold}>Off-the-shelf</span>: */}
+			{/* Pre-built AIs:
+			</div> */}
 			{/* </div> */}
 			{/* <div className={styles.blurb}>
 				<div>Off-the-shelf: Pre-built apps ready for use. </div>
@@ -36,7 +37,7 @@ export default function Home() {
 					نظام
 				</div>
 			</div> */}
-			<div className={styles.widgets}>
+			{/* <div className={styles.widgets}>
 				<Atheno />
 			</div>
 			<div className={styles.imageContainer}>
@@ -52,7 +53,7 @@ export default function Home() {
 					}}
 					sizes='(max-width: 768px) 250px, 400px'
 				/>
-			</div>
+			</div> */}
 			{/* <div className={styles.uses}>
 				<div className={styles.use}>
 					Airbreather
@@ -83,11 +84,42 @@ export default function Home() {
 				instances. Introducing bleeding-edge production-grade AI is the driving
 				aim.
 			</div> */}
-			<div className={styles.divider} />
-			<div className={styles.item}>
-				{/* <span className={styles.bold}>Off-the-shelf</span>: */}
-				State-of-the-art AIs:
-			</div>
+			{/* <div className={styles.linearBlur} /> */}
+			{/* <div className={styles.blurContainer}>
+				<div className={styles.imageContainerAlbumArtblur}>
+					<Image
+						src='/M2.jpg'
+						className={styles.imageBlur}
+						alt=''
+						fill={true}
+						quality={100}
+						style={{
+							objectFit: "cover",
+							overflow: "hidden",
+						}}
+						sizes='(max-width: 768px) 250px, 400px'
+					/>
+				</div>
+			</div> */}
+			{/* <div className={styles.albumArtContainer}>
+				<div className={styles.imageContainerAlbumArt}>
+					<Image
+						src='/M2.jpg'
+						className={styles.image}
+						alt=''
+						fill={true}
+						quality={100}
+						style={{
+							objectFit: "cover",
+							overflow: "hidden",
+						}}
+						sizes='(max-width: 768px) 250px, 400px'
+					/>
+				</div>
+			</div> */}
+			{/* <div className={styles.introContainer}> */}
+			<div className={styles.intro}>State-of-the-art + Bleeding Edge AIs:</div>
+			{/* </div> */}
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					{/* <div className={mono.className}>HYDRA</div> */}
@@ -99,12 +131,12 @@ export default function Home() {
 				<div className={styles.items}>
 					<div className={styles.item}>
 						<span className={styles.bold}>Enterprise-grade apps</span> Spun up
-						with sophisticated configurations. Request new interfaces injected
-						with AIs. Dock new technologies into legacy stacks. Capture and
-						advance the capitalisation of pre-existing or new markets.
+						with sophisticated configurations. Request interfaces injected with
+						AIs. Dock new technologies into legacy stacks. Capture and advance
+						the capitalisation of pre-existing or new markets.
 					</div>
 					<div className={styles.row}>
-						<div className={styles.price}>$100K+ quote</div>
+						<div className={styles.price}>$100K+</div>
 						{/* <div className={styles.item}>
 							Bleeding Edge: R&D apps designed to push the manifold of what is
 							physically feasible - delivered as fast as feasible.
@@ -113,6 +145,9 @@ export default function Home() {
 						<div className={styles.feature}>Voice</div>
 						<div className={styles.feature}>Web</div>
 						<div className={styles.feature}>Analytics</div>
+						<div className={styles.feature}>
+							Carbon-neutral - cero - as standard
+						</div>
 					</div>
 					<div className={styles.itemDesc}></div>
 				</div>
@@ -138,11 +173,16 @@ export default function Home() {
 				{/* <div className={styles.divider} /> */}
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>R&D / Bleeding Edge</span> Designed to
-						push the manifold of what is physically feasible - delivered as fast
-						as feasible.
+						<span className={styles.bold}>R&D</span> Designed to push the
+						manifold of what is physically feasible - delivered as fast as
+						feasible.
 					</div>
-					<div className={styles.price}>Asset Securities Quote</div>
+					<div className={styles.row}>
+						<div className={styles.price}>Securities</div>
+						<div className={styles.feature}>
+							Carbon-neutral - cero - as standard
+						</div>
+					</div>
 				</div>
 			</div>
 			{/* <div className={styles.marsLabelBuild}>
@@ -150,7 +190,7 @@ export default function Home() {
 			</div> */}
 			{/* <div className={styles.imageContainer}>
 				<Image
-					src='/USGS1.jpg'
+					src='/M2.jpg'
 					className={styles.image}
 					alt=''
 					fill={true}

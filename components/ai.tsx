@@ -29,7 +29,7 @@ export default function Chat() {
 								</div>
 							</span>
 							<div className={styles.messageBody}>
-								<div className={styles.mIDb}>AI</div>
+								<div className={styles.mIDb}>Client Requests</div>
 								<div className={styles.messageTextb}>
 									Ask anything you want about the company, customer and account
 									onboarding, the Nort-3 or anything else.

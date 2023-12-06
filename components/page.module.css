@@ -110,7 +110,7 @@
 }
 
 .image {
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 }
 
 .image,
@@ -185,8 +185,8 @@
 
 @media (min-width: 1300px) {
 	.imageBlur {
-		filter: blur(80px) brightness(0.3);
-		-webkit-filter: blur(80px) brightness(0.3);
+		filter: brightness(0.3);
+		-webkit-filter: brightness(0.3);
 	}
 }
 
@@ -386,7 +386,7 @@
 .transcriptDuration {
 	font-size: 10px;
 	color: var(--secondary-grey);
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	padding: 4px;
 	border-radius: 8px;
 	height: 24px;
@@ -420,8 +420,8 @@
 	width: 100%;
 	padding: 20px 30px 10px 20px;
 	margin: 30px 0px 0px 0px;
-	border-bottom: 1px solid var(--outline);
-	border-top: 1px solid var(--outline);
+	border-bottom: 2px solid var(--outline);
+	border-top: 2px solid var(--outline);
 	/* background-color: rgb(10, 10, 10);
 	background-color: #e4e4e4; */
 	/* background-color: rgb(10, 10, 10, 0.7); */
@@ -639,7 +639,7 @@
 	flex-direction: row;
 	width: fit-content;
 	height: 28px;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	padding-left: 2px;
 	padding-right: 6px;
 	color: var(--deep-grey);
@@ -650,7 +650,7 @@
 .diEnhancei {
 	width: 20px;
 	margin-left: 10px;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	padding: 2px 0px 2px 0px;
 	height: 32px;
 }
@@ -676,7 +676,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	border-radius: 10px;
 	padding: 4px;
 }
@@ -804,7 +804,7 @@ A .AILinkContainer {
 	border-radius: 100px;
 	font-size: 10px;
 	color: var(--blue-action);
-	border: 1px solid white;
+	border: 2px solid white;
 	background-color: var(--opacity);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -831,7 +831,7 @@ A .AILinkContainer {
 	.AILink,
 	.AILinkChat,
 	.AILinkChapter {
-		border: 1px solid white;
+		border: 2px solid white;
 	}
 }
 
@@ -851,7 +851,7 @@ A .AILinkContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid white;
+	border: 2px solid white;
 	border-radius: 100%;
 	margin-top: 10px;
 	height: 40px;
@@ -867,7 +867,7 @@ A .AILinkContainer {
 	height: 24px;
 	width: 24px;
 	border-radius: 8px;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
@@ -884,7 +884,7 @@ A .AILinkContainer {
 	align-items: center;
 	padding: 10px 30px 10px 30px;
 	margin-bottom: 10px;
-	border-top: 1px solid var(--outline);
+	border-top: 2px solid var(--outline);
 	/* margin-top: 40px; */
 }
 
@@ -936,7 +936,7 @@ A .AILinkContainer {
 	max-height: calc(100vh - 30px);
 	width: calc(100vw - 20px);
 	border-radius: 20px;
-	border: 1px solid white;
+	border: 2px solid white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -946,8 +946,7 @@ A .AILinkContainer {
 }
 
 .chat {
-	border: 1px solid var(--outline);
-	background-color: black;
+	border: 2px solid var(--outline);
 }
 
 @media (min-width: 1300px) {
@@ -1039,7 +1038,7 @@ A .AILinkContainer {
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: row;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	/* background-color: #0c0c0c; */
 	border-radius: 10px;
 	margin: 0px 10px 10px 0px;
@@ -1082,7 +1081,7 @@ A .AILinkContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	color: var(--ai);
 	padding: 10px;
 	border-radius: 10px;
@@ -1126,7 +1125,7 @@ A .AILinkContainer {
 .messageBody,
 .messageBodyH {
 	border-radius: 10px;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	/* background-color: rgba(0, 0, 0, 0.1); */
 	padding: 10px;
 }
@@ -1161,7 +1160,7 @@ A .AILinkContainer {
 	justify-content: flex-start;
 	align-items: center;
 	height: 200px;
-	border-top: 1px solid var(--outline);
+	border-top: 2px solid var(--outline);
 }
 
 @media (max-width: 1300px) {
@@ -1222,7 +1221,7 @@ A .AILinkContainer {
 }
 
 .playAll {
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	background-color: white;
 	border-radius: 8px;
 	padding: 10px;
@@ -1248,7 +1247,7 @@ A .AILinkContainer {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	border: 1px solid var(--ai);
+	border: 2px solid var(--outline);
 	padding: 10px;
 	background-color: var(--user-bg);
 	color: var(--ai);
@@ -1268,7 +1267,7 @@ A .AILinkContainer {
 	align-items: center;
 	flex-direction: column;
 	background-color: transparent;
-	border: 1px solid var(--outline);
+	border: 2px solid var(--outline);
 	border-radius: 30px;
 	width: 100px;
 	height: 100px;

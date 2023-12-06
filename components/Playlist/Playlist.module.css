@@ -12,11 +12,9 @@
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-	.winterdelta {
-		background: linear-gradient(180deg, black 0%, transparent 100%);
-	}
-}
+/* .winterdelta {
+	background: linear-gradient(180deg, black 40%, transparent 100%);
+} */
 
 .build {
 	display: flex;
@@ -47,4 +45,18 @@
 .divider {
 	margin-left: 8px;
 	font-size: 22px;
+}
+
+.imageContainer {
+	top: 0;
+	overflow: hidden;
+	width: 100vw;
+	height: 40vh;
+	position: relative;
+	z-index: -10;
+}
+
+.image {
+	filter: brightness(30%);
+	-webkit-filter: brightness(30%);
 }
