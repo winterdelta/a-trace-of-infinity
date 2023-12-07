@@ -7,7 +7,8 @@ import {
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import { Asterisk } from "@carbon/icons-react";
+import { AssemblyReference } from "@carbon/icons-react";
+import Link from "next/link";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -52,7 +53,11 @@ export default function Home() {
 					Consumer-grade + off-the-shelf + Pre-built AIs:
 				</div>
 			</div> */}
-			{/* <div className={styles.imagery}>
+			{/* <div className={styles.sc}>
+				<div className={mono.className}>STYLLCRAFT</div>
+			</div> */}
+			<div className={styles.divider} />
+			<div className={styles.imagery}>
 				<Link href='https://www.styllcraft.com'>
 					<div className={styles.imageContainer}>
 						<div>
@@ -60,11 +65,7 @@ export default function Home() {
 						</div>
 					</div>
 				</Link>
-			</div> */}
-			{/* <div className={styles.sc}>
-				<div className={mono.className}>STYLLCRAFT</div>
-			</div> */}
-			<div className={styles.divider} />
+			</div>
 			{/* <div className={styles.noto}>
 				<div className={noto.className}>آزادی</div>
 				<div className={noto.className}>دل کی آزادی</div>

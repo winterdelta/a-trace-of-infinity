@@ -298,7 +298,7 @@
 .imageContainer {
 	overflow: hidden;
 	width: 50vw;
-	height: calc(50vw / (2.38 * 4));
+	height: calc(50vw / (2.38));
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -326,7 +326,7 @@
 @media (max-width: 1300px) {
 	.imageContainer {
 		width: calc(50vw - 20px);
-		height: calc((50vw - 20px));
+		height: calc((80vw - 20px));
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -423,7 +423,7 @@
 	align-items: center;
 	width: 100vw;
 	margin-bottom: 30px;
-	margin-top: -200px;
+	/* margin-top: -200px; */
 }
 
 .sc {

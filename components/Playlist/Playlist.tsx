@@ -20,13 +20,13 @@ export default function Playlist() {
 				sizes='(max-width: 768px) 250px, 400px'
 			/>
 			{/* <Spline scene='https://prod.spline.design/LE2fitzSYsYIk8rw/scene.splinecode' /> */}
-			{/* <video className={styles.video} autoPlay playsInline muted loop>
+			<video className={styles.video} autoPlay playsInline muted loop>
 				<source
-					src='https://waveforms.s3.us-east-2.amazonaws.com/WAYMAKER.mp4'
-                    src="/WavesII.mp4"
+					// src='https://waveforms.s3.us-east-2.amazonaws.com/WAYMAKER.mp4'
+                    src="/shrooms3.mp4"
 					type='video/mp4'
 				/>
-			</video> */}
+			</video>
 			{/* <div className={styles.overlay} /> */}
 		</div>
 	);
