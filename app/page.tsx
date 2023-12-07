@@ -1,12 +1,33 @@
 import Playlist from "@/components/Playlist/Playlist";
 import styles from "./page.module.css";
 import AI from "@/components/ai";
-import { IBM_Plex_Mono } from "next/font/google";
+import {
+	IBM_Plex_Mono,
+	Noto_Nastaliq_Urdu,
+	IBM_Plex_Sans_Arabic,
+	UnifrakturMaguntia,
+} from "next/font/google";
+import { Asterisk } from "@carbon/icons-react";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
-	style: ["normal"],
+	style: ["normal", "italic"],
 	weight: ["500", "700"],
+});
+
+const noto = Noto_Nastaliq_Urdu({
+	subsets: ["latin"],
+	weight: ["700"],
+});
+
+const uni = UnifrakturMaguntia({
+	subsets: ["latin"],
+	weight: ["400"],
+});
+
+const ar = IBM_Plex_Sans_Arabic({
+	subsets: ["arabic"],
+	weight: ["200"],
 });
 
 export default function Home() {
@@ -14,6 +35,42 @@ export default function Home() {
 		<main className={styles.main}>
 			<div className={styles.fadeLayer} />
 			<Playlist />
+			<div className={styles.ai}>Humanity-grade AIs</div>
+			{/* <div className={styles.noto}> */}
+			{/* <div className={noto.className}>آزادی</div> */}
+			{/* <div className={ar.className}>
+					دل کی آزادی سے جنما۔ ایک عالمی جشن جو ہمیں ستاروں تک لے جاتا ہے۔
+				</div> */}
+			{/* </div> */}
+			{/* <div className={uni.className}>
+				Air a bhreith bho shaorsa a&apos; chridhe. Cèilidh cruinneil a bheir
+				sinn chun na rionnagan.
+			
+			{/* </div> */}
+			{/* <div className={styles.introContainer}>
+				<div className={styles.intro}>
+					Consumer-grade + off-the-shelf + Pre-built AIs:
+				</div>
+			</div> */}
+			{/* <div className={styles.imagery}>
+				<Link href='https://www.styllcraft.com'>
+					<div className={styles.imageContainer}>
+						<div>
+							<AssemblyReference size={16} />
+						</div>
+					</div>
+				</Link>
+			</div> */}
+			{/* <div className={styles.sc}>
+				<div className={mono.className}>STYLLCRAFT</div>
+			</div> */}
+			<div className={styles.divider} />
+			{/* <div className={styles.noto}>
+				<div className={noto.className}>آزادی</div>
+				<div className={noto.className}>دل کی آزادی</div>
+			</div>
+			<div className={styles.gaelic}>Saorsa a&apos; Chridhe</div> */}
+			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.consumer}> */}
 			{/* <div className={styles.item}> */}
 			{/* <span className={styles.bold}>Off-the-shelf</span>: */}
@@ -117,9 +174,13 @@ export default function Home() {
 					/>
 				</div>
 			</div> */}
-			{/* <div className={styles.introContainer}> */}
-			<div className={styles.intro}>State-of-the-art + Bleeding Edge AIs:</div>
-			{/* </div> */}
+			<div className={styles.introContainer}>
+				<div className={styles.intro}>
+					<div className={mono.className}>
+						R&D + STATE-OF-THE-ART + BLEEDING EDGE AIs
+					</div>
+				</div>
+			</div>
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					{/* <div className={mono.className}>HYDRA</div> */}
@@ -130,10 +191,10 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade apps</span> Spun up
-						with sophisticated configurations. Request interfaces injected with
-						AIs. Dock new technologies into legacy stacks. Capture and advance
-						the capitalisation of pre-existing or new markets.
+						<span className={styles.bold}>Enterprise apps</span> Spun up with
+						sophisticated configurations. Request interfaces injected with AIs.
+						Dock new technologies into legacy stacks. Capture and advance the
+						capitalisation of pre-existing or new markets.
 					</div>
 					<div className={styles.row}>
 						<div className={styles.price}>$100K+</div>

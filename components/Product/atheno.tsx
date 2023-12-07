@@ -30,7 +30,7 @@ export default function Home() {
 	return (
 		<>
 			<div className={styles.styllcraft}>
-				{/* <div className={ibm.className}>Styllcraft</div> */}
+				<div className={ibm.className}>Styllcraft</div>
 				{/* <div className={styles.divider} /> */}
 				{/* <div className={styles.urdu}>
 					<div className={urdu.className}>الف</div>
