@@ -42,8 +42,11 @@ export default function Home() {
 					{/* <div>Humanity-grade AIs</div> */}
 					{/* <div className={mono.className}> */}
 					<Link href='https://play.winterdelta.com/playlist/99034458631'>
-						Halucinera: From nuance emerges emotion. A literature review of Kang
-						et al.
+						{/* <div>Halucinera.</div> */}
+						<div>
+							Halusinera: From nuance emerges emotion. A literature review of
+							Kang et al.
+						</div>
 					</Link>
 					{/* <Link
 						className={styles.emotion}
@@ -189,7 +192,7 @@ export default function Home() {
 			<div className={styles.enterprise}>
 				Enterprise-grade AIs for advanced productisation.
 			</div>
-			<div className={styles.enterpriseDesc}>
+			<div className={styles.Desc}>
 				Guided by the Nort-3 Principles, <span className={styles.logo}>W∆</span>{" "}
 				can inject AI-enabled interfaces into legacy stacks or spin up new web
 				instances. Introducing bleeding-edge production-grade AI is the driving
@@ -229,13 +232,13 @@ export default function Home() {
 				</div>
 			</div> */}
 			<div className={styles.divider} />
-			{/* <div className={styles.introContainer}>
+			<div className={styles.introContainer}>
 				<div className={styles.intro}>
 					<div className={mono.className}>
 						R&D + STATE-OF-THE-ART + BLEEDING EDGE AIs
 					</div>
 				</div>
-			</div> */}
+			</div>
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					{/* <div className={mono.className}>HYDRA</div> */}
@@ -323,7 +326,7 @@ export default function Home() {
 			<div className={styles.chatContainer}>
 				<AI />
 			</div>
-			<div className={styles.marsLabel}>A TRACE OF INFINITY BUILD</div>
+			<div className={styles.marsLabel}>A TRACE OF INFINITY | BUILD</div>
 		</main>
 	);
 }

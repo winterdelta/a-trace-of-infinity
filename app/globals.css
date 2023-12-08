@@ -51,7 +51,7 @@
 	--image-border: #0084ff;
 } */
 
-:root {
+/* :root {
 	--max-width: 1100px;
 	--border-radius: 12px;
 	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -112,6 +112,61 @@
 	--font: black;
 	--ai-raised: #0d0f1a;
 	--image-border: #dfdfdf;
+} */
+
+:root {
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 0, 0, 0;
+	--background-end-rgb: 0, 0, 0;
+
+	--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+	--secondary-glow: linear-gradient(
+		to bottom right,
+		rgba(1, 65, 255, 0),
+		rgba(1, 65, 255, 0),
+		rgba(1, 65, 255, 0.3)
+	);
+
+	--tile-start-rgb: 2, 13, 46;
+	--tile-end-rgb: 2, 5, 19;
+	--tile-border: conic-gradient(
+		#ffffff80,
+		#ffffff40,
+		#ffffff30,
+		#ffffff20,
+		#ffffff10,
+		#ffffff10,
+		#ffffff80
+	);
+
+	--callout-rgb: 20, 20, 20;
+	--callout-border-rgb: 108, 108, 108;
+	--card-rgb: 100, 100, 100;
+	--card-border-rgb: 200, 200, 200;
+
+	--deep-grey: #232327;
+	--shallow-deep-grey: #3a3a40;
+	--secondary-grey: #61616c;
+	--font-grey: #aaaaaa;
+	--dark-font-grey: #727272;
+	--blue-action: white;
+
+	--outline: #131313;
+	--opacity: transparent;
+	--bg-raised: rgb(10, 10, 10);
+	--secondary-text: #232327;
+
+	--ai: white;
+	--ai-bg: #000000;
+	/* --user: #0084ff; */
+	--user: white;
+	--user-bg: #000000;
+
+	--ai-btn: #def2ff;
+
+	--font: white;
+	--ai-raised: #0d0f1a;
+	--image-border: #0084ff;
 }
 
 @media (prefers-color-scheme: dark) {
