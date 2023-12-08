@@ -7,9 +7,9 @@ import {
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import { ArrowRight, AssemblyReference } from "@carbon/icons-react";
-import Link from "next/link";
+import { AssemblyReference } from "@carbon/icons-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -41,13 +41,25 @@ export default function Home() {
 				<div className={styles.halucinera}>
 					{/* <div>Humanity-grade AIs</div> */}
 					{/* <div className={mono.className}> */}
-					<div>Halucinera</div>
+					<Link href='https://play.winterdelta.com/playlist/99034458631'>
+						Halucinera: From nuance emerges emotion. A literature review of Kang
+						et al.
+					</Link>
+					{/* <Link
+						className={styles.emotion}
+						href='https://play.winterdelta.com/playlist/99034458631'
+					>
+						From nuance emerges emotion. A literature review of Kang et al.
+					</Link> */}
 					<div className={styles.icono}>
-						<span className={styles.icon}>
+						<Link
+							className={styles.icon}
+							href='https://play.winterdelta.com/playlist/99034458631'
+						>
 							{/* <ArrowRight size={16} /> */}
 							<AssemblyReference size={24} />
 							{/* <span className={styles.onLabel}>ON</span> */}
-						</span>
+						</Link>
 						<div className={styles.di}>
 							<div className={styles.faviD}>
 								<Image
@@ -63,11 +75,8 @@ export default function Home() {
 									sizes='(max-width: 768px) 250px, 400px'
 								/>
 							</div>
-							<div className={styles.dolby}>Dolby | Enhance</div>
+							<div className={styles.dolby}>Dolby Enhance</div>
 						</div>
-					</div>
-					<div className={styles.emotion}>
-						From nuance emerges emotion. A literature review.
 					</div>
 					{/* <div className={styles.urdu}>
 						<div className={ar.className}>

@@ -153,7 +153,7 @@
 
 .divider {
 	width: 100vw;
-	height: 1px;
+	height: 2px;
 	/* margin-bottom: 20px; */
 	margin-top: 10px;
 	background-color: var(--outline);
@@ -570,12 +570,13 @@
 	font-size: 14px;
 	padding-top: 10px;
 	color: var(--secondary-grey);
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .icon {
-	border: 2px solid var(--outline);
+	border: 2px solid white;
 	margin-left: 0px;
+	margin-top: 4px;
 	color: white;
 	display: flex;
 	justify-content: flex-start;
@@ -583,8 +584,9 @@
 	padding: 10px;
 	padding-right: 40px;
 	border-radius: 14px;
-	backdrop-filter: brightness(0.5) blur(100px);
-	-webkit-backdrop-filter: brightness(0.5) blur(100px);
+	backdrop-filter: drop-shadow(0px 0px 50px white);
+	backdrop-filter: brightness(0.6) blur(100px);
+	-webkit-backdrop-filter: brightness(0.6) blur(100px);
 }
 
 .icono {
@@ -592,6 +594,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .onLabel {
