@@ -7,13 +7,14 @@ import {
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import { AssemblyReference } from "@carbon/icons-react";
+import { ArrowRight, AssemblyReference } from "@carbon/icons-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
-	style: ["normal", "italic"],
-	weight: ["500", "700"],
+	style: ["normal"],
+	weight: ["700"],
 });
 
 const noto = Noto_Nastaliq_Urdu({
@@ -36,28 +37,76 @@ export default function Home() {
 		<main className={styles.main}>
 			<div className={styles.fadeLayer} />
 			<Playlist />
-			<div className={styles.ai}>Humanity-grade AIs</div>
+			<div className={styles.ai}>
+				<div className={styles.halucinera}>
+					{/* <div>Humanity-grade AIs</div> */}
+					{/* <div className={mono.className}> */}
+					<div>Halucinera</div>
+					<div className={styles.icono}>
+						<span className={styles.icon}>
+							{/* <ArrowRight size={16} /> */}
+							<AssemblyReference size={24} />
+							{/* <span className={styles.onLabel}>ON</span> */}
+						</span>
+						<div className={styles.di}>
+							<div className={styles.faviD}>
+								<Image
+									src='/dolby-icon-grey.svg'
+									className={styles.imageD}
+									alt=''
+									fill={true}
+									quality={100}
+									style={{
+										objectFit: "cover",
+										overflow: "hidden",
+									}}
+									sizes='(max-width: 768px) 250px, 400px'
+								/>
+							</div>
+							<div className={styles.dolby}>Dolby | Enhance</div>
+						</div>
+					</div>
+					<div className={styles.emotion}>
+						From nuance emerges emotion. A literature review.
+					</div>
+					{/* <div className={styles.urdu}>
+						<div className={ar.className}>
+							نعتیہ موضوع سے جذبات کی پیداوار ہوتی ہے - ایک ادبی تنقید
+						</div>
+					</div> */}
+
+					{/* <span className={styles.date}>Friday 8 Dec 10:01AM | Q4 2023</span> */}
+					{/* </div> */}
+				</div>
+			</div>
+			{/* <div className={styles.urdu}>
+				<div className={noto.className}>
+					صارفین کے لیے مخصوص + جدید ترین + درجہ اول کے تیار شدہ مصنوعی ذہانت کے
+					نظام
+				</div>
+			</div> */}
 			{/* <div className={styles.noto}> */}
 			{/* <div className={noto.className}>آزادی</div> */}
-			{/* <div className={ar.className}>
+			{/* <div className={styles.urdu}>
+				<div className={ar.className}>
 					دل کی آزادی سے جنما۔ ایک عالمی جشن جو ہمیں ستاروں تک لے جاتا ہے۔
-				</div> */}
+				</div>
+			</div> */}
 			{/* </div> */}
 			{/* <div className={uni.className}>
 				Air a bhreith bho shaorsa a&apos; chridhe. Cèilidh cruinneil a bheir
 				sinn chun na rionnagan.
-			
 			{/* </div> */}
+			{/* <div className={styles.sc}>
+				<div className={mono.className}>STYLLCRAFT</div>
+			</div> */}
+			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.introContainer}>
 				<div className={styles.intro}>
 					Consumer-grade + off-the-shelf + Pre-built AIs:
 				</div>
 			</div> */}
-			{/* <div className={styles.sc}>
-				<div className={mono.className}>STYLLCRAFT</div>
-			</div> */}
-			<div className={styles.divider} />
-			<div className={styles.imagery}>
+			{/* <div className={styles.imagery}>
 				<Link href='https://www.styllcraft.com'>
 					<div className={styles.imageContainer}>
 						<div>
@@ -65,12 +114,13 @@ export default function Home() {
 						</div>
 					</div>
 				</Link>
-			</div>
+			</div> */}
 			{/* <div className={styles.noto}>
 				<div className={noto.className}>آزادی</div>
 				<div className={noto.className}>دل کی آزادی</div>
 			</div>
 			<div className={styles.gaelic}>Saorsa a&apos; Chridhe</div> */}
+			{/* <div className={styles.gaelic}>Saorsa a&apos; Chridhe</div> */}
 			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.consumer}> */}
 			{/* <div className={styles.item}> */}
@@ -87,12 +137,6 @@ export default function Home() {
 				<div>
 					Bleeding-edge: AI R&D apps designed to push the manifold of what is
 					physically feasible - dedivvered as fast as feasible.
-				</div>
-			</div> */}
-			{/* <div className={styles.urdu}>
-				<div className={noto.className}>
-					صارفین کے لیے مخصوص + جدید ترین + درجہ اول کے تیار شدہ مصنوعی ذہانت کے
-					نظام
 				</div>
 			</div> */}
 			{/* <div className={styles.widgets}>
@@ -175,13 +219,14 @@ export default function Home() {
 					/>
 				</div>
 			</div> */}
-			<div className={styles.introContainer}>
+			<div className={styles.divider} />
+			{/* <div className={styles.introContainer}>
 				<div className={styles.intro}>
 					<div className={mono.className}>
 						R&D + STATE-OF-THE-ART + BLEEDING EDGE AIs
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					{/* <div className={mono.className}>HYDRA</div> */}

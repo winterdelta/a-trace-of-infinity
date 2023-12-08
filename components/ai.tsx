@@ -31,8 +31,8 @@ export default function Chat() {
 							<div className={styles.messageBody}>
 								<div className={styles.mIDb}>Client Requests</div>
 								<div className={styles.messageTextb}>
-									Ask anything you want about the company, customer and account
-									onboarding, the Nort-3 or anything else.
+									Ask anything you want about the company, account
+									onboarding or anything else.
 								</div>
 							</div>
 						</div>
