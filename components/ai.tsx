@@ -29,9 +29,9 @@ export default function Chat() {
 								</div>
 							</span>
 							<div className={styles.messageBody}>
-								<div className={styles.mIDb}>Client Requests</div>
+								<div className={styles.mIDb}>Client Requests AI</div>
 								<div className={styles.messageTextb}>
-									Ask anything you want about the company, account
+									Ask about the company, account
 									onboarding or anything else.
 								</div>
 							</div>

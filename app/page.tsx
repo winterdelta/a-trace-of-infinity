@@ -40,15 +40,9 @@ export default function Home() {
 			<div className={styles.ai}>
 				<div className={styles.halucinera}>
 					{/* <div>Humanity-grade AIs</div> */}
-					{/* <div className={mono.className}> */}
-					<Link href='https://play.winterdelta.com/playlist/99034458631'>
-						{/* <div>Halucinera.</div> */}
-						<div>
-							Halusinera:
-							{/* From nuance emerges emotion.  */} A literature review of Kang
-							et al.
-						</div>
-					</Link>
+					{/* <Link href='https://play.winterdelta.com/playlist/99034458631'>
+						<div>Halusinera: A literature review of Kang et al.</div>
+					</Link> */}
 					{/* <Link
 						className={styles.emotion}
 						href='https://play.winterdelta.com/playlist/99034458631'
@@ -63,7 +57,7 @@ export default function Home() {
 							<AssemblyReference size={24} />
 							<span className={styles.onLabel}>ON</span>
 						</Link> */}
-						<div className={styles.di}>
+						{/* <div className={styles.di}>
 							<div className={styles.faviD}>
 								<Image
 									src='/dolby-icon-grey.svg'
@@ -79,16 +73,14 @@ export default function Home() {
 								/>
 							</div>
 							<div className={styles.dolby}>Dolby Enhance</div>
-						</div>
+						</div> */}
 					</div>
 					{/* <div className={styles.urdu}>
 						<div className={ar.className}>
 							نعتیہ موضوع سے جذبات کی پیداوار ہوتی ہے - ایک ادبی تنقید
 						</div>
 					</div> */}
-
 					{/* <span className={styles.date}>Friday 8 Dec 10:01AM | Q4 2023</span> */}
-					{/* </div> */}
 				</div>
 			</div>
 			{/* <div className={styles.urdu}>
