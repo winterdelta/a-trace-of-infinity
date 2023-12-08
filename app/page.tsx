@@ -235,7 +235,7 @@ export default function Home() {
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
 					<div className={mono.className}>
-						R&D + STATE-OF-THE-ART + BLEEDING EDGE AIs
+						STATE-OF-THE-ART + BLEEDING EDGE AIs
 					</div>
 				</div>
 			</div>
@@ -249,7 +249,7 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise apps</span> Spun up with
+						<span className={styles.bold}>Enterprise-grade apps</span> Spun with
 						sophisticated configurations. Request interfaces injected with AIs.
 						Dock new technologies into legacy stacks. Capture and advance the
 						capitalisation of pre-existing or new markets.
@@ -264,7 +264,7 @@ export default function Home() {
 						<div className={styles.feature}>Voice</div>
 						<div className={styles.feature}>Web</div>
 						<div className={styles.feature}>Analytics</div>
-						<div className={styles.feature}>
+						<div className={styles.featureC}>
 							Carbon-neutral - cero - as standard
 						</div>
 					</div>
@@ -298,7 +298,7 @@ export default function Home() {
 					</div>
 					<div className={styles.row}>
 						<div className={styles.price}>Securities</div>
-						<div className={styles.feature}>
+						<div className={styles.featureC}>
 							Carbon-neutral - cero - as standard
 						</div>
 					</div>
@@ -326,7 +326,7 @@ export default function Home() {
 			<div className={styles.chatContainer}>
 				<AI />
 			</div>
-			<div className={styles.marsLabel}>A TRACE OF INFINITY | BUILD</div>
+			<div className={styles.marsLabel}>A TRACE OF INFINITY BUILD</div>
 		</main>
 	);
 }
