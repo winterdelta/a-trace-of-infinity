@@ -44,8 +44,9 @@ export default function Home() {
 					<Link href='https://play.winterdelta.com/playlist/99034458631'>
 						{/* <div>Halucinera.</div> */}
 						<div>
-							Halusinera: From nuance emerges emotion. A literature review of
-							Kang et al.
+							Halusinera:
+							{/* From nuance emerges emotion.  */} A literature review of Kang
+							et al.
 						</div>
 					</Link>
 					{/* <Link
@@ -55,14 +56,13 @@ export default function Home() {
 						From nuance emerges emotion. A literature review of Kang et al.
 					</Link> */}
 					<div className={styles.icono}>
-						<Link
+						{/* <Link
 							className={styles.icon}
 							href='https://play.winterdelta.com/playlist/99034458631'
 						>
-							{/* <ArrowRight size={16} /> */}
 							<AssemblyReference size={24} />
-							{/* <span className={styles.onLabel}>ON</span> */}
-						</Link>
+							<span className={styles.onLabel}>ON</span>
+						</Link> */}
 						<div className={styles.di}>
 							<div className={styles.faviD}>
 								<Image
