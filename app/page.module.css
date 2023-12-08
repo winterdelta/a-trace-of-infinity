@@ -221,10 +221,10 @@
 	flex-direction: column;
 	border: 2px solid var(--outline);
 	border-radius: 20px;
-	height: 330px;
+	height: 380px;
 	padding: 30px;
-	backdrop-filter: brightness(0.4) blur(40px);
-	-webkit-backdrop-filter: brightness(0.4) blur(40px);
+	backdrop-filter: brightness(0.9) blur(40px);
+	-webkit-backdrop-filter: brightness(0.9) blur(40px);
 }
 
 @media (min-width: 1300px) {
