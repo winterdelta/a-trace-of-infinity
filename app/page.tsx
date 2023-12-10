@@ -223,7 +223,7 @@ export default function Home() {
 					/>
 				</div>
 			</div> */}
-			<div className={styles.divider} />
+			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
 					<div className={mono.className}>PRE-BUILT AIs:</div>
@@ -236,6 +236,11 @@ export default function Home() {
 				</span>
 				<div>
 					<div className={styles.musicIcon}>ATHENS - AUDIO MESSAGING PRO</div>
+					<div className={styles.urdu}>
+						<div className={ar.className}>
+							آتنس - آڈیو پیغام بھیجنے والی ہومینگ ایپ
+						</div>
+					</div>
 					<div className={styles.di}>
 						<div className={styles.faviD}>
 							<Image
@@ -255,7 +260,7 @@ export default function Home() {
 					</div>
 				</div>
 			</Link>
-			<div className={styles.divider} />
+			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
 					<div className={mono.className}>
@@ -314,7 +319,7 @@ export default function Home() {
 					<div>Ask about the Nort-3. It is the guiding framework for c-dev.</div>
 				</div> */}
 				{/* <div className={styles.divider} /> */}
-				<div className={styles.items}>
+				{/* <div className={styles.items}>
 					<div className={styles.item}>
 						<span className={styles.bold}>R&D</span> Designed to push the
 						manifold of what is physically feasible - delivered as fast as
@@ -326,7 +331,7 @@ export default function Home() {
 							Carbon-neutral - cero - as standard
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			{/* <div className={styles.marsLabelBuild}>
 				&apos;A TRACE OF INFINITY&apos; BUILD

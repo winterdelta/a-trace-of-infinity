@@ -32,7 +32,7 @@
 	align-items: flex-start;
 	color: var(--font);
 	padding: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	/* background-color: white; */
 	backdrop-filter: blur(100px);
 	-webkit-backdrop-filter: blur(100px);

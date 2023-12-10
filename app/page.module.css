@@ -127,7 +127,7 @@
 	margin-bottom: 10px;
 	margin-top: 10px;
 	margin-right: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	padding: 10px;
 	border-radius: 10px;
 	white-space: nowrap;
@@ -145,9 +145,11 @@
 
 .urdu {
 	margin-top: 10px;
-	direction: rtl;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	/* direction: rtl; */
 	/* padding-left: 10px; */
-	font-size: 27px;
+	font-size: 18px;
 	color: var(--secondary-grey);
 }
 
@@ -188,6 +190,9 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+	width: 100vw;
+	border-top: 1px dotted var(--outline);
+	/* border-bottom: 1px dotted var(--outline); */
 	/* margin-left: 10px; */
 	/* width: 100vw; */
 }
@@ -219,9 +224,9 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	border-radius: 20px;
-	height: 380px;
+	height: fit-content;
 	padding: 30px;
 	backdrop-filter: brightness(0.9) blur(40px);
 	-webkit-backdrop-filter: brightness(0.9) blur(40px);
@@ -229,7 +234,7 @@
 
 @media (min-width: 1300px) {
 	.items {
-		width: calc(25vw - 5px);
+		width: calc(40vw - 5px);
 	}
 
 	.intro {
@@ -248,7 +253,7 @@
 }
 
 .price {
-	/* border: 2px solid var(--outline); */
+	/* border: 1px dotted var(--outline); */
 	/* background-color: white; */
 	white-space: nowrap;
 	color: white;
@@ -266,7 +271,7 @@
 .feature,
 .featureC {
 	white-space: nowrap;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -312,7 +317,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	border-radius: 20px;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -366,9 +371,9 @@
 
 .image {
 	border-radius: 10px;
-	/* border: 2px solid var(--outline); */
+	/* border: 1px dotted var(--outline); */
 	z-index: 0;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 }
 
 .itemRow {
@@ -496,7 +501,7 @@
 
 	.image {
 		border-radius: 30px;
-		border: 2px solid var(--outline);
+		border: 1px dotted var(--outline);
 	}
 
 	.noto {

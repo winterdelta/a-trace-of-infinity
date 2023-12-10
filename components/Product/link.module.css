@@ -101,7 +101,7 @@
 	flex-wrap: wrap;
 	/* margin-top: 20px; */
 	/* margin-bottom: 100px; */
-	/* border: 2px solid var(--outline); */
+	/* border: 1px dotted var(--outline); */
 }
 
 .features {
@@ -147,8 +147,10 @@
 }
 
 .divider {
+	width: 100vw;
+	
 	height: 20px;
 	margin: 0px 12px 0px 4px;
-	width: 2px;
+	width: 1px;
 	background-color: var(--outline);
 }

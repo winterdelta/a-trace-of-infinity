@@ -110,7 +110,7 @@
 }
 
 .image {
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 }
 
 .image,
@@ -386,7 +386,7 @@
 .transcriptDuration {
 	font-size: 10px;
 	color: var(--secondary-grey);
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	padding: 4px;
 	border-radius: 8px;
 	height: 24px;
@@ -639,7 +639,7 @@
 	flex-direction: row;
 	width: fit-content;
 	height: 28px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	padding-left: 2px;
 	padding-right: 6px;
 	color: var(--deep-grey);
@@ -650,7 +650,7 @@
 .diEnhancei {
 	width: 20px;
 	margin-left: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	padding: 2px 0px 2px 0px;
 	height: 32px;
 }
@@ -676,7 +676,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	border-radius: 10px;
 	padding: 4px;
 }
@@ -867,7 +867,7 @@ A .AILinkContainer {
 	height: 24px;
 	width: 24px;
 	border-radius: 8px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
@@ -884,7 +884,7 @@ A .AILinkContainer {
 	align-items: center;
 	padding: 10px 30px 10px 30px;
 	margin-bottom: 10px;
-	border-top: 2px solid var(--outline);
+	border-top: 1px dotted var(--outline);
 	/* margin-top: 40px; */
 }
 
@@ -946,7 +946,7 @@ A .AILinkContainer {
 }
 
 .chat {
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 }
 
 @media (min-width: 1300px) {
@@ -1038,7 +1038,7 @@ A .AILinkContainer {
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: row;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	/* background-color: #0c0c0c; */
 	border-radius: 10px;
 	margin: 0px 10px 10px 0px;
@@ -1081,7 +1081,7 @@ A .AILinkContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	color: var(--ai);
 	padding: 10px;
 	border-radius: 10px;
@@ -1125,7 +1125,7 @@ A .AILinkContainer {
 .messageBody,
 .messageBodyH {
 	border-radius: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	/* background-color: rgba(0, 0, 0, 0.1); */
 	padding: 10px;
 }
@@ -1221,7 +1221,7 @@ A .AILinkContainer {
 }
 
 .playAll {
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	background-color: white;
 	border-radius: 8px;
 	padding: 10px;
@@ -1247,7 +1247,7 @@ A .AILinkContainer {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	padding: 10px;
 	background-color: var(--user-bg);
 	color: var(--ai);
@@ -1267,7 +1267,7 @@ A .AILinkContainer {
 	align-items: center;
 	flex-direction: column;
 	background-color: transparent;
-	border: 2px solid var(--outline);
+	border: 1px dotted var(--outline);
 	border-radius: 30px;
 	width: 100px;
 	height: 100px;
