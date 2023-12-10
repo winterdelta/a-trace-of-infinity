@@ -13,8 +13,8 @@ import Link from "next/link";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
-	style: ["normal"],
-	weight: ["700"],
+	style: ["normal", "italic"],
+	weight: ["500"],
 });
 
 const noto = Noto_Nastaliq_Urdu({
@@ -224,42 +224,46 @@ export default function Home() {
 				</div>
 			</div> */}
 			{/* <div className={styles.divider} /> */}
-			<div className={styles.introContainer}>
-				<div className={styles.intro}>
-					<div className={mono.className}>PRE-BUILT AIs:</div>
+			<div className={styles.athenian}>
+				<div className={styles.introContainer}>
+					<div className={styles.intro}>
+						<div className={mono.className}>PRE-BUILT AIs:</div>
+					</div>
 				</div>
+				<Link className={styles.audio} href='https://play.winterdelta.com/'>
+					<div className={styles.button}>
+						<AssemblyReference size={32} />
+					</div>
+					<div className={styles.athens}>
+						<div className={styles.musicIcon}>ATHENS</div>
+						<div className={styles.athensTag}>
+							<div className={mono.className}>AUDIO MESSAGING PRO</div>
+						</div>
+						<div className={styles.urdu}>
+							<div className={ar.className}>
+								آتنس - آڈیو پیغام بھیجنے والی ہومینگ ایپ
+							</div>
+						</div>
+						<div className={styles.di}>
+							<div className={styles.faviD}>
+								<Image
+									src='/dolby-icon-grey.svg'
+									className={styles.imageD}
+									alt=''
+									fill={true}
+									quality={100}
+									style={{
+										objectFit: "cover",
+										overflow: "hidden",
+									}}
+									sizes='(max-width: 768px) 250px, 400px'
+								/>
+							</div>
+							<div className={styles.dolby}>Dolby Enhance</div>
+						</div>
+					</div>
+				</Link>
 			</div>
-
-			<Link className={styles.audio} href='https://play.winterdelta.com/'>
-				<span className={styles.button}>
-					<AssemblyReference size={32} />
-				</span>
-				<div>
-					<div className={styles.musicIcon}>ATHENS - AUDIO MESSAGING PRO</div>
-					<div className={styles.urdu}>
-						<div className={ar.className}>
-							آتنس - آڈیو پیغام بھیجنے والی ہومینگ ایپ
-						</div>
-					</div>
-					<div className={styles.di}>
-						<div className={styles.faviD}>
-							<Image
-								src='/dolby-icon-grey.svg'
-								className={styles.imageD}
-								alt=''
-								fill={true}
-								quality={100}
-								style={{
-									objectFit: "cover",
-									overflow: "hidden",
-								}}
-								sizes='(max-width: 768px) 250px, 400px'
-							/>
-						</div>
-						<div className={styles.dolby}>Dolby Enhance</div>
-					</div>
-				</div>
-			</Link>
 			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>

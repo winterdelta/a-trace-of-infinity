@@ -186,6 +186,11 @@
 	flex-direction: column;
 }
 
+/* .athenian {
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+} */
+
 .introContainer {
 	display: flex;
 	justify-content: flex-start;
@@ -207,7 +212,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	text-align: left;
-	margin-top: 20px;
+	padding-top: 20px;
 	/* display: flex;
 	justify-content: center;
 	align-items: center; */
@@ -638,8 +643,7 @@
 }
 
 .di {
-	margin: -12px 10px 0px 6px;
-	border-radius: 0px;
+	margin: -10px 10px -10px 6px;
 }
 
 .faviD,
@@ -684,26 +688,24 @@
 .button {
 	border: 1px dotted var(--ai);
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	border-radius: 100px;
-	/* height: 50px;
-	width: 50px; */
 	padding: 10px;
 	color: black;
 	background-color: white;
 	margin: 0px 0px 10px 10px;
-	/* background-color: transparent; */
 	backdrop-filter: brightness(0.9) blur(40px);
 	-webkit-backdrop-filter: brightness(0.9) blur(40px);
 }
 
 .audio {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 30px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 20px;
 	margin-bottom: 0px;
+	width: 100%;
 }
 
 .musicIcon {
@@ -713,16 +715,29 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: -12px;
+	margin-top: 0px;
 	margin-left: 10px;
 	font-size: 10px;
 	letter-spacing: 4px;
 	text-indent: 4px;
 	font-weight: 700;
 	font-style: italic;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-radius: 6px;
 	padding: 4px;
 	color: black;
 	background-color: white;
+}
+
+.athensTag {
+	margin-left: 10px;
+	letter-spacing: 3px;
+	font-size: 10px;
+	/* font-style: italic; */
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+.athens {
+	margin-bottom: 20px;
 }
