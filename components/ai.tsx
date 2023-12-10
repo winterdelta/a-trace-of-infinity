@@ -31,7 +31,8 @@ export default function Chat() {
 							<div className={styles.messageBody}>
 								<div className={styles.mIDb}>Client Assistant AI</div>
 								<div className={styles.messageTextb}>
-									Ask about the company, account onboarding or anything else.
+									Ask about the company, account onboarding, product detailing
+									or anything else.
 								</div>
 							</div>
 						</div>
