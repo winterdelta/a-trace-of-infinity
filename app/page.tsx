@@ -235,7 +235,7 @@ export default function Home() {
 					<AssemblyReference size={32} />
 				</span>
 				<div>
-					<div className={styles.musicIcon}>ATHENS</div>
+					<div className={styles.musicIcon}>ATHENS - AUDIO MESSAGING PRO</div>
 					<div className={styles.di}>
 						<div className={styles.faviD}>
 							<Image
