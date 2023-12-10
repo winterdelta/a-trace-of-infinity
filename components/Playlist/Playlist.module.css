@@ -79,9 +79,11 @@
 .overlay {
 	position: absolute;
 	backdrop-filter:
-	/* blur(70px); */ saturate(00%) invert(100%);
+	/* blur(70px); */ 
+	/* saturate(00%)  */ invert(100%);
 	-webkit-backdrop-filter: 
-	/* blur(70px)  */ saturate(00%) invert(100%);
+	/* blur(70px)  */ 
+	/* saturate(00%) */ invert(100%);
 	background-image: linear-gradient(to bottom, transparent, var(--user-bg));
 	height: 70vh;
 	width: 100vw;

@@ -7,19 +7,15 @@ import {
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import { AssemblyReference } from "@carbon/icons-react";
+import { AssemblyReference, Cognitive, ShoppingBag } from "@carbon/icons-react";
 import Image from "next/image";
 import Link from "next/link";
+import PreBuilt from "@/components/Shop/prebuilt";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
 	weight: ["500"],
-});
-
-const noto = Noto_Nastaliq_Urdu({
-	subsets: ["latin"],
-	weight: ["700"],
 });
 
 const uni = UnifrakturMaguntia({
@@ -224,10 +220,15 @@ export default function Home() {
 				</div>
 			</div> */}
 			{/* <div className={styles.divider} /> */}
-			<div className={styles.athenian}>
+			{/* <div className={styles.button}>
+				<ShoppingBag size={32} />
+			</div> */}
+			<div className={styles.headline}>AI Shop</div>
+			<PreBuilt />
+			{/* <div className={styles.athenian}>
 				<div className={styles.introContainer}>
 					<div className={styles.intro}>
-						<div className={mono.className}>PRE-BUILT AIs:</div>
+						<div className={mono.className}>PRE-BUILT:</div>
 					</div>
 				</div>
 				<Link className={styles.audio} href='https://play.winterdelta.com/'>
@@ -263,13 +264,15 @@ export default function Home() {
 						</div>
 					</div>
 				</Link>
-			</div>
+				<div className={styles.buttons}>
+					<div>Demo</div>
+					<div>Purchase</div>
+				</div>
+			</div> */}
 			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
-					<div className={mono.className}>
-						STATE-OF-THE-ART + BLEEDING EDGE AIs
-					</div>
+					<div className={mono.className}>STATE-OF-THE-ART:</div>
 				</div>
 			</div>
 			<div className={styles.title}>
@@ -282,7 +285,7 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade apps</span> Spun with
+						<span className={styles.bold}>Enterprise-grade</span> Spun with
 						sophisticated configurations. Request interfaces injected with AIs.
 						Dock new technologies into legacy stacks. Capture and advance the
 						capitalisation of pre-existing or new markets.
@@ -301,7 +304,7 @@ export default function Home() {
 							Carbon-neutral - cero - as standard
 						</div>
 					</div>
-					<div className={styles.itemDesc}></div>
+					{/* <div className={styles.itemDesc}></div> */}
 				</div>
 				{/* <div className={styles.imageContainer}>
 					<Image
