@@ -13,7 +13,7 @@
 }
 
 .winterdelta {
-	background: linear-gradient(180deg, black 40%, transparent 100%);
+	background: linear-gradient(180deg, var(--user-bg) 40%, transparent 100%);
 }
 
 .build {
@@ -78,12 +78,23 @@
 
 .overlay {
 	position: absolute;
-	backdrop-filter: blur(70px);
-	-webkit-backdrop-filter: blur(70px);
-	background-image: linear-gradient(to bottom, transparent, black);
+	backdrop-filter:
+	/* blur(70px); */ saturate(00%) invert(100%);
+	-webkit-backdrop-filter: 
+	/* blur(70px)  */ saturate(00%) invert(100%);
+	background-image: linear-gradient(to bottom, transparent, var(--user-bg));
 	height: 70vh;
 	width: 100vw;
 	top: 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.overlay {
+		backdrop-filter:
+	/* blur(70px); */ saturate(00%);
+		-webkit-backdrop-filter: 
+	/* blur(70px)  */ saturate(00%);
+	}
 }
 
 .ai {

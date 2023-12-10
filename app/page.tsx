@@ -226,6 +226,38 @@ export default function Home() {
 			<div className={styles.divider} />
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
+					<div className={mono.className}>PRE-BUILT AIs:</div>
+				</div>
+			</div>
+
+			<Link className={styles.audio} href='https://play.winterdelta.com/'>
+				<span className={styles.button}>
+					<AssemblyReference size={32} />
+				</span>
+				<div>
+					<div className={styles.musicIcon}>ATHENS</div>
+					<div className={styles.di}>
+						<div className={styles.faviD}>
+							<Image
+								src='/dolby-icon-grey.svg'
+								className={styles.imageD}
+								alt=''
+								fill={true}
+								quality={100}
+								style={{
+									objectFit: "cover",
+									overflow: "hidden",
+								}}
+								sizes='(max-width: 768px) 250px, 400px'
+							/>
+						</div>
+						<div className={styles.dolby}>Dolby Enhance</div>
+					</div>
+				</div>
+			</Link>
+			<div className={styles.divider} />
+			<div className={styles.introContainer}>
+				<div className={styles.intro}>
 					<div className={mono.className}>
 						STATE-OF-THE-ART + BLEEDING EDGE AIs
 					</div>

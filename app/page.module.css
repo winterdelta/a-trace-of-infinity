@@ -327,7 +327,7 @@
 	position: fixed;
 	width: 100vw;
 	height: 70vh;
-	background: linear-gradient(180deg, transparent 00%, black 100%);
+	background: linear-gradient(180deg, transparent 00%, var(--user-bg) 100%);
 	z-index: -10;
 }
 
@@ -422,7 +422,7 @@
 	position: absolute;
 	height: 70vh;
 	width: 100vw;
-	background: linear-gradient(180deg, transparent 0%, black 100%);
+	background: linear-gradient(180deg, transparent 0%, var(--user-bg) 100%);
 	z-index: -3;
 }
 
@@ -573,8 +573,9 @@
 }
 
 .emotion {
-	font-size: 14px;
+	font-size: 18px;
 	padding-top: 10px;
+	padding-left: 40px;
 	color: var(--secondary-grey);
 	margin-bottom: 20px;
 }
@@ -632,7 +633,7 @@
 }
 
 .di {
-	margin: 0px 10px 0px 0px;
+	margin: -12px 10px 0px 6px;
 	border-radius: 0px;
 }
 
@@ -673,4 +674,50 @@
 
 .imageD {
 	border: none;
+}
+
+.button {
+	border: 1px dotted var(--ai);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	/* height: 50px;
+	width: 50px; */
+	padding: 10px;
+	color: black;
+	background-color: white;
+	margin: 0px 0px 10px 10px;
+	/* background-color: transparent; */
+	backdrop-filter: brightness(0.9) blur(40px);
+	-webkit-backdrop-filter: brightness(0.9) blur(40px);
+}
+
+.audio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.musicIcon {
+	border: 1px dotted var(--ai);
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -12px;
+	margin-left: 10px;
+	font-size: 10px;
+	letter-spacing: 4px;
+	text-indent: 4px;
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	padding: 4px;
+	color: black;
+	background-color: white;
 }
