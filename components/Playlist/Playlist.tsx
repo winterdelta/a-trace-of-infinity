@@ -6,7 +6,7 @@ import styles from "./Playlist.module.css";
 export default function Playlist() {
 	return (
 		<div className={styles.imageContainer}>
-			<Image
+			{/* <Image
 				src='/USGS4.jpg'
 				className={styles.image}
 				alt=''
@@ -18,13 +18,10 @@ export default function Playlist() {
 					objectPosition: "centre",
 				}}
 				sizes='(max-width: 768px) 250px, 400px'
-			/>
-			{/* <Spline scene='https://prod.spline.design/LE2fitzSYsYIk8rw/scene.splinecode' /> */}
+			/> */}
 			<video className={styles.video} autoPlay playsInline muted loop>
 				<source
-					// src='https://waveforms.s3.us-east-2.amazonaws.com/WAYMAKER.mp4'
-					// src='/shoroms3.mp4'
-					src='https://waveforms.s3.us-east-2.amazonaws.com/images/Text+to+Video+Gen-2+12s.mp4'
+					src='https://waveforms.s3.us-east-2.amazonaws.com/images/Gen-2+16s+cam_H+75.mp4'
 					type='video/mp4'
 				/>
 			</video>
