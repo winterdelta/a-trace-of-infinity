@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./HUD.module.css";
-// import Pathname from "./pathname";
 
 export default function HUD() {
 	return (

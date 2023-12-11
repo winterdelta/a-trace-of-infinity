@@ -14,11 +14,11 @@
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 	.winterdelta {
 		background: linear-gradient(180deg, var(--user-bg) 0%, transparent 100%);
 	}
-}
+} */
 
 .build {
 	display: flex;
