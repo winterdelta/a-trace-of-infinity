@@ -63,7 +63,7 @@ export default function PreBuilt() {
 				</div> */}
 				<div className={styles.athens}>
 					<div className={styles.device}>
-						<span className={styles.musicIcon}>ATHENS</span>
+						<span className={styles.musicIcon}>ATHENO</span>
 						<span className={styles.d}>
 							<Mobile size={24} />
 						</span>
@@ -189,7 +189,7 @@ export default function PreBuilt() {
 					<div className={styles.nova}>Deepgram | Nova</div>
 				</div>
 			</div>
-			<div className={styles.price}>Price: $8</div>
+			<div className={styles.price}>Price: £0 - £8.00</div>
 		</div>
 	);
 }

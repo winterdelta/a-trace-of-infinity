@@ -369,7 +369,8 @@ export default function Home() {
 					<span className={styles.logo}>W∆</span>
 				</span> */}
 				<div className={styles.marsLabel}>
-					<span className={styles.logo}>W∆</span> \\ A TRACE OF INFINITY BUILD
+					<span className={styles.logo}>W∆</span> \\ &apos;A TRACE OF
+					INFINITY&apos; BUILD
 				</div>
 			</div>
 		</main>
