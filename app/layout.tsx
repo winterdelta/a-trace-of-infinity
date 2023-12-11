@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import HUD from "@/components/HUD/HUD";
+import Nav from "@/components/HUD/nav";
 
 const ibm = IBM_Plex_Sans({
 	subsets: ["latin"],
@@ -23,7 +24,8 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={ibm.className}>
-				<HUD />
+				<Nav />
+				{/* <HUD /> */}
 				{children}
 			</body>
 		</html>
