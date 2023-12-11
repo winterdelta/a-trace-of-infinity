@@ -224,7 +224,7 @@ export default function Home() {
 				{/* <span className={styles.winterdelta}>
 					<span className={styles.logo}>W∆</span>
 				</span> */}
-				<span className={styles.headline}>AI Inventory</span>
+				<span className={styles.headline}>AIs</span>
 			</div>
 			<PreBuilt />
 			{/* <div className={styles.athenian}>

@@ -169,7 +169,7 @@ export default function PreBuilt() {
 							sizes='(max-width: 768px) 250px, 400px'
 						/>
 					</div>
-					<div className={styles.dolby}>Dolby Enhance</div>
+					<div className={styles.dolby}>Dolby | Enhance</div>
 				</div>
 				<div className={styles.dg}>
 					<div className={styles.dgi}>

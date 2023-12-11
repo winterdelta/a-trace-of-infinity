@@ -805,7 +805,7 @@
 
 .f {
 	margin: 4px;
-	padding: 2px 10px 2px 0px;
+	padding: 0px 10px 0px 0px;
 	border-radius: 30px;
 	font-size: 9px;
 	display: flex;
@@ -813,7 +813,7 @@
 	align-items: center;
 	flex-direction: row;
 	color: white;
-	border: 1px solid white;
+	border: 1px solid var(--outline);
 	background-color: transparent;
 	font-weight: bold;
 	width: fit-content;
