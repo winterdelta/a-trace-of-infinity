@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import HUD from "@/components/HUD/HUD";
 import Nav from "@/components/HUD/nav";
 
 const ibm = IBM_Plex_Sans({
