@@ -222,7 +222,7 @@
 
 		--font: white;
 		--ai-raised: #0d0f1a;
-		--image-border: #0084ff;
+		--image-border: #bfe0ff;
 	}
 }
 
@@ -333,4 +333,9 @@ button {
 
 button:disabled {
 	color: var(--deep-grey);
+}
+
+ul {
+	list-style-type: "+ ";
+	color: white;
 }
