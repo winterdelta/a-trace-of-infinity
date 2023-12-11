@@ -29,7 +29,7 @@ export default function Pathname() {
 						<EarthFilled size={16} />
 					</span>
 				) : pathname === "playlist" ? (
-					<Link href={isSignedIn ? "/dash" : ""}>playlists</Link>
+					<Link href='/'>playlists</Link>
 				) : (
 					pathname
 				)}

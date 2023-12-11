@@ -155,7 +155,7 @@
 		180deg,
 		rgb(var(--background-start-rgb)) 0%,
 		rgb(214, 219, 220, 0.6) 50%,
-		/* transparent 78%, */ rgb(var(--background-start-rgb)) 100%
+		rgb(var(--background-start-rgb)) 100%
 	);
 }
 
