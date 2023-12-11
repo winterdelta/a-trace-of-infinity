@@ -79,13 +79,11 @@
 .overlay {
 	position: absolute;
 	backdrop-filter:
-	/* blur(70px); */ 
-	saturate(700%)  
-	invert(100%);
+	/* blur(70px); */ saturate(700%) invert(100%)
+		hue-rotate(240deg);
 	-webkit-backdrop-filter: 
-	/* blur(70px)  */ 
-	saturate(700%) 
-	invert(100%);
+	/* blur(70px)  */ saturate(700%) invert(100%)
+		hue-rotate(240deg);
 	background-image: linear-gradient(to bottom, transparent, var(--user-bg));
 	height: 70vh;
 	width: 100vw;
@@ -95,9 +93,9 @@
 @media (prefers-color-scheme: dark) {
 	.overlay {
 		backdrop-filter:
-	/* blur(70px); */ saturate(400%);
+	/* blur(70px); */ saturate(400%) hue-rotate(240deg);
 		-webkit-backdrop-filter: 
-	/* blur(70px)  */ saturate(400%);
+	/* blur(70px)  */ saturate(400%) hue-rotate(240deg);
 	}
 }
 
