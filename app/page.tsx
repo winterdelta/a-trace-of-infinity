@@ -3,14 +3,11 @@ import styles from "./page.module.css";
 import AI from "@/components/ai";
 import {
 	IBM_Plex_Mono,
-	Noto_Nastaliq_Urdu,
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import { AssemblyReference, Cognitive, ShoppingBag } from "@carbon/icons-react";
-import Image from "next/image";
-import Link from "next/link";
 import PreBuilt from "@/components/Shop/prebuilt";
+import React from "react";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -223,7 +220,12 @@ export default function Home() {
 			{/* <div className={styles.button}>
 				<ShoppingBag size={32} />
 			</div> */}
-			<div className={styles.headline}>AI Shop</div>
+			<div className={styles.title}>
+				{/* <span className={styles.winterdelta}>
+					<span className={styles.logo}>W∆</span>
+				</span> */}
+				<span className={styles.headline}>AI Inventory</span>
+			</div>
 			<PreBuilt />
 			{/* <div className={styles.athenian}>
 				<div className={styles.introContainer}>
@@ -272,7 +274,7 @@ export default function Home() {
 			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
-					<div className={mono.className}>STATE-OF-THE-ART:</div>
+					<div className={mono.className}>STATE-OF-THE-ART</div>
 				</div>
 			</div>
 			<div className={styles.title}>
@@ -362,7 +364,14 @@ export default function Home() {
 			<div className={styles.chatContainer}>
 				<AI />
 			</div>
-			<div className={styles.marsLabel}>A TRACE OF INFINITY BUILD</div>
+			<div className={styles.title}>
+				{/* <span className={styles.winterdelta}>
+					<span className={styles.logo}>W∆</span>
+				</span> */}
+				<div className={styles.marsLabel}>
+					<span className={styles.logo}>W∆</span> \\ A TRACE OF INFINITY BUILD
+				</div>
+			</div>
 		</main>
 	);
 }
