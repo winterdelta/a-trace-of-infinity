@@ -376,9 +376,9 @@
 
 .image {
 	border-radius: 10px;
-	/* border: 1px dotted var(--outline); */
 	z-index: 0;
-	border: 1px dotted var(--outline);
+	height: 16px;
+	width: 16px;
 }
 
 .itemRow {
@@ -506,7 +506,7 @@
 
 	.image {
 		border-radius: 30px;
-		border: 1px dotted var(--outline);
+		/* border: 1px dotted var(--outline); */
 	}
 
 	.noto {
@@ -599,7 +599,6 @@
 	align-items: center;
 	padding: 10px 8px 10px 0px;
 	height: 44px;
-	/* padding-right: 40px; */
 	border-radius: 14px;
 	backdrop-filter: drop-shadow(0px 0px 50px white);
 	backdrop-filter: brightness(0.6) blur(100px);
@@ -630,11 +629,8 @@
 	flex-direction: row;
 	width: fit-content;
 	height: 30px;
-	/* width: 30px; */
 	border: 1px solid white;
 	background-color: none;
-	/* margin-top: 10px; */
-	/* padding-left: 2px; */
 	padding-right: 2px;
 	color: var(--deep-grey);
 	border-radius: 14px;
@@ -644,26 +640,26 @@
 .dg {
 	margin-left: 14px;
 	padding: 0px 6px 0px 6px;
+	border-radius: 10px;
+	background-color: white;
 }
 
 .di {
 	margin: 0px 0px 20px 0px;
 	padding: 2px 8px 2px 4px;
-	/* margin-left: 10px; */
+	background-color: white;
 	border: 1px solid white;
+	border-radius: 10px;
 }
 
 .faviD,
 .dgi {
 	height: 24px;
 	width: 24px;
-	/* margin-right: 10px; */
-	/* border: 1px solid var(--outline); */
 	background-color: transparent;
 	border-radius: 50%;
 	overflow: hidden;
 	position: relative;
-	/* top: 300px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -672,7 +668,7 @@
 .dolby,
 .nova {
 	font-weight: 700;
-	color: var(--ai);
+	color: black;
 	font-size: 10px;
 	display: flex;
 	justify-content: center;
@@ -682,11 +678,7 @@
 .nova {
 	margin-left: 4px;
 	padding-right: 2px;
-}
-
-.dgi {
-	width: 16px;
-	height: 16px;
+	color: black;
 }
 
 .imageD {
@@ -820,8 +812,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: row;
-	/* border: 1px solid white; */
-	background-color: white;
+	color: white;
+	border: 1px solid white;
+	background-color: transparent;
 	font-weight: bold;
 	width: fit-content;
 }
@@ -834,13 +827,13 @@
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
-	color: black;
+	color: white;
 	border-radius: 100px;
 }
 
 .fit {
 	/* margin-left: 6px; */
-	color: black;
+	color: white;
 }
 
 .device {
@@ -867,4 +860,9 @@
 .price {
 	margin-top: 40px;
 	margin-bottom: 50px;
+	margin-left: 10px;
+}
+
+.dgi {
+	padding: 12px;
 }

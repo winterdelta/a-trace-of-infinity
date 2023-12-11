@@ -11,7 +11,6 @@ const ibm = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
 	title: "Winterdelta",
-	// description: "Specialised productisation - AI R&D for technological interfaces.",
 	description: "Specialised R&D - consumer-grade R&D.",
 };
 

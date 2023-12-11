@@ -20,7 +20,6 @@ import {
 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import randomColor from "randomcolor";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -45,7 +44,7 @@ export default function PreBuilt() {
 		// 	hue: "#4D5358",
 		// });
 
-		return "white";
+		return "transparent";
 	};
 
 	// const gen_color = "white";
@@ -139,7 +138,7 @@ export default function PreBuilt() {
 					<span className={styles.fi}>
 						<Collaborate size={16} />
 					</span>
-					<span className={styles.fit}>COLLABORATIVE</span>
+					<span className={styles.fit}>COLLABORATION</span>
 				</div>
 				<div style={{ backgroundColor: gen_color() }} className={styles.f}>
 					<span className={styles.fi}>
