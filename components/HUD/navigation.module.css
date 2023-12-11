@@ -541,7 +541,6 @@
 	align-items: center;
 	border-radius: 8px;
 	color: white;
-	/* border: 1px solid var(--outline); */
 	padding: 2px;
 	background-color: var(--opacity);
 	backdrop-filter: blur(100px);
