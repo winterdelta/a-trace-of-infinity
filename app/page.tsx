@@ -285,7 +285,7 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade AIs</span> Spun with
+						<span className={styles.bold}>Enterprise-grade</span> Spun with
 						sophisticated configurations. Request interfaces injected with AIs.
 						Dock new technologies into legacy stacks. Capture and advance the
 						capitalisation of pre-existing or new markets.

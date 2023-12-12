@@ -254,8 +254,8 @@
 
 .price {
 	white-space: nowrap;
-	color: white;
-	border: 1px dashed white;
+	color: black;
+	border: 1px dotted black;
 	border-radius: 10px;
 	width: fit-content;
 	padding: 10px;
@@ -263,6 +263,13 @@
 	margin-right: 10px;
 	z-index: -10000;
 	font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+	.price {
+		color: white;
+		border: 1px dotted white;
+	}
 }
 
 .feature,
@@ -518,7 +525,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: row;
-	margin-top: -20vh;
+	margin-top: -30vh;
 	padding-left: 10px;
 	font-size: 24px;
 }
