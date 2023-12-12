@@ -4,6 +4,7 @@ import AI from "@/components/ai";
 import {
 	IBM_Plex_Mono,
 	IBM_Plex_Sans_Arabic,
+	Noto_Nastaliq_Urdu,
 	UnifrakturMaguntia,
 } from "next/font/google";
 import React from "react";
@@ -13,6 +14,12 @@ import PreBuilt from "@/components/Shop/prebuilt";
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
+	weight: ["500"],
+});
+
+const urdu = Noto_Nastaliq_Urdu({
+	subsets: ["arabic"],
+	style: ["normal"],
 	weight: ["500"],
 });
 
@@ -228,7 +235,7 @@ export default function Home() {
 				<span className={styles.headline}>
 					<span>AIs</span>
 					<span className={styles.urduH}>
-						<span className={ar.className}>مصنوعی ذہانتیں</span>
+						<span className={urdu.className}>مصنوعی ذہانتیں</span>
 					</span>
 				</span>
 			</div>
@@ -371,7 +378,7 @@ export default function Home() {
 			<div className={styles.aiContainer}>
 				<span className={styles.headline}>Talk to Client Services</span>
 				<span className={styles.urduH}>
-					<span className={ar.className}>کلائنٹ سروسز سے بات کریں</span>
+					<span className={urdu.className}>کلائنٹ سروسز سے بات کریں</span>
 				</span>
 			</div>
 			<div className={styles.chatContainer}>

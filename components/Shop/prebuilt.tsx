@@ -19,6 +19,7 @@ import {
 	IBM_Plex_Sans_Arabic,
 	IBM_Plex_Serif,
 	IBM_Plex_Sans_Condensed,
+	Noto_Nastaliq_Urdu,
 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,6 +34,12 @@ const serif = IBM_Plex_Serif({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
 	weight: ["500", "700"],
+});
+
+const urdu = Noto_Nastaliq_Urdu({
+	subsets: ["arabic"],
+	style: ["normal"],
+	weight: ["500"],
 });
 
 const condensed = IBM_Plex_Sans_Condensed({
@@ -95,11 +102,11 @@ export default function PreBuilt() {
 						Explore meaningful problems with the most advanced commercially
 						technologies available.
 					</div> */}
-					<div className={styles.urdu}>
-						<span className={ar.className}>
+					{/* <div className={styles.urdu}>
+						<span className={urdu.className}>
 							آتنس - آڈیو پیغام بھیجنے والی ہومینگ ایپ
 						</span>
-					</div>
+					</div> */}
 				</div>
 			</Link>
 			<div className={styles.fea}>
