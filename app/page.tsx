@@ -235,7 +235,7 @@ export default function Home() {
 				<span className={styles.headline}>
 					<span>AIs</span>
 					<span className={styles.urduH}>
-						<span className={ar.className}>مصنوعی ذہانتیں</span>
+						<span className={urdu.className}>مصنوعی ذہانتیں</span>
 					</span>
 				</span>
 			</div>
