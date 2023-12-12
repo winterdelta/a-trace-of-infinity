@@ -4,10 +4,10 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export async function GET() {
-	const image = await fetch(new URL("./S2.png", import.meta.url)).then((res) =>
-		res.blob()
-	);
-	const imageUrl = URL.createObjectURL(image);
+	// const image = await fetch(new URL("./S2.png", import.meta.url)).then((res) =>
+	// 	res.blob()
+	// );
+	// const imageUrl = URL.createObjectURL(image);
 
 	return new ImageResponse(
 		(
@@ -22,7 +22,7 @@ export async function GET() {
 					alignItems: "center",
 				}}
 			>
-				<Image alt='' width='256' height='256' src={imageUrl} />
+				<Image alt='' width='256' height='256' src='./S2.png' />
 			</div>
 		),
 		{
