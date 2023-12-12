@@ -323,7 +323,7 @@ export default function Home() {
 					{/* <div className={styles.itemDesc}></div> */}
 				</div>
 				{/* <div className={styles.imageContainer}>
-					<Image
+					
 						src='/M1.jpg'
 						className={styles.image}
 						alt=''
