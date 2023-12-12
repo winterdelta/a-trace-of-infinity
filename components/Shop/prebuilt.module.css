@@ -730,7 +730,7 @@
 	margin-bottom: 10px;
 	border-radius: 6px;
 	padding: 4px;
-	color: white;
+	/* color: white; */
 	/* background-color: white; */
 }
 
@@ -764,6 +764,7 @@
 
 .athens {
 	margin-bottom: 20px;
+	margin-top: 15px;
 }
 
 .headline {
@@ -817,7 +818,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: row;
-	color: white;
+	/* color: white; */
 	border: 1px solid var(--outline);
 	background-color: transparent;
 	font-weight: bold;
@@ -831,13 +832,14 @@
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
-	color: white;
+	/* color: white; */
 	border-radius: 100px;
 }
 
+/* 
 .fit {
 	color: white;
-}
+} */
 
 .device {
 	display: flex;
@@ -881,6 +883,7 @@
 	margin-bottom: 30px;
 	background-color: white;
 	border-radius: 10px;
+	border: 1px solid var(--outline);
 	/* filter: drop-shadow(0px 0px 10px #ffffff); */
 }
 
@@ -913,4 +916,25 @@
 	align-items: center;
 	color: black;
 	padding-left: 4px;
+}
+
+.priceWid {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-display: row;
+}
+
+.p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--outline);
+	border-radius: 10px;
+	padding: 0px 6px 0px 6px;
+	height: 38px;
+	margin-top: -30px;
+	margin-left: 4px;
+	font-style: italic;
+	font-weight: bold;
 }

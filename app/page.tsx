@@ -235,7 +235,7 @@ export default function Home() {
 				<span className={styles.headline}>
 					<span>AIs</span>
 					<span className={styles.urduH}>
-						<span className={urdu.className}>مصنوعی ذہانتیں</span>
+						<span className={ar.className}>مصنوعی ذہانتیں</span>
 					</span>
 				</span>
 			</div>
@@ -377,9 +377,9 @@ export default function Home() {
 			{/* <div className={styles.margin} /> */}
 			<div className={styles.aiContainer}>
 				<span className={styles.headline}>Talk to Client Services</span>
-				<span className={styles.urduH}>
+				{/* <span className={styles.urduH}>
 					<span className={urdu.className}>کلائنٹ سروسز سے بات کریں</span>
-				</span>
+				</span> */}
 			</div>
 			<div className={styles.chatContainer}>
 				<AI />

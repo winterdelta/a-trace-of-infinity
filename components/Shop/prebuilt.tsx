@@ -214,14 +214,17 @@ export default function PreBuilt() {
 					are nearing usage limits.
 				</span>
 			</div> */}
-			<Link href='https://atheno.winterdelta.com'>
-				<div className={styles.authBtn}>
-					<div className={styles.authi}>
-						<IntentRequestActive size={16} />
+			<div className={styles.priceWid}>
+				<Link href='https://atheno.winterdelta.com'>
+					<div className={styles.authBtn}>
+						<div className={styles.authi}>
+							<IntentRequestActive size={16} />
+						</div>
+						<div className={styles.authenLabel}>AUTHENTICATE</div>
 					</div>
-					<div className={styles.authenLabel}>AUTHENTICATE</div>
-				</div>
-			</Link>
+				</Link>
+				<div className={styles.p}>0 - $8</div>
+			</div>
 		</div>
 	);
 }

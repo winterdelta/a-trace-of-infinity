@@ -12,9 +12,9 @@
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.winterdelta {
+/* .winterdelta {
 	background: linear-gradient(180deg, var(--user-bg) 40%, transparent 100%);
-}
+} */
 
 .build {
 	display: flex;
@@ -78,11 +78,9 @@
 
 .overlay {
 	position: absolute;
-	backdrop-filter: saturate(0%) invert(100%) sepia(45%) hue-saturate(180%);
-	-webkit-backdrop-filter: saturate(00%) sepia(45%) invert(100%)
-		hue-saturate(180%);
-
-	background-image: linear-gradient(to bottom, transparent, var(--user-bg));
+	backdrop-filter: saturate(200%);
+	-webkit-backdrop-filter: saturate(200%);
+	/* background-image: linear-gradient(to bottom, transparent, var(--user-bg)); */
 	height: 70vh;
 	width: 100vw;
 	top: 0px;
@@ -90,8 +88,8 @@
 
 @media (prefers-color-scheme: dark) {
 	.overlay {
-		backdrop-filter: saturate(00%) sepia(100%) hue-saturate(180%);
-		-webkit-backdrop-filter: saturate(00%) sepia(10%) hue-saturate(180%);
+		backdrop-filter: saturate(100%) hue-rotate(490deg);
+		-webkit-backdrop-filter: saturate(100%) hue-rotate(490deg);
 	}
 }
 
