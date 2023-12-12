@@ -1,6 +1,5 @@
 // "use client";
 
-// import Image from "next/image";
 import styles from "./Playlist.module.css";
 
 export default function Playlist() {
@@ -21,8 +20,8 @@ export default function Playlist() {
 			/> */}
 			<video className={styles.video} autoPlay playsInline muted loop>
 				<source
-					// src='/butterfly.mp4'
-					src='https://waveforms.s3.us-east-2.amazonaws.com/images/Gen-2+16s+cam_H+75.mp4'
+					src='/butterfly.mp4'
+					// src='https://waveforms.s3.us-east-2.amazonaws.com/images/Gen-2+16s+cam_H+75.mp4'
 					type='video/mp4'
 				/>
 			</video>

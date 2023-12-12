@@ -4,6 +4,7 @@ import {
 	IbmWatsonSpeechToText,
 	IbmWatsonTextToSpeech,
 	IbmWatsonxAssistant,
+	IntentRequestActive,
 	Laptop,
 	MachineLearningModel,
 	Mobile,
@@ -17,6 +18,7 @@ import {
 	IBM_Plex_Mono,
 	IBM_Plex_Sans_Arabic,
 	IBM_Plex_Serif,
+	IBM_Plex_Sans_Condensed,
 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,10 +26,16 @@ import Link from "next/link";
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
-	weight: ["500", "700"],
+	weight: ["300", "500", "700"],
 });
 
 const serif = IBM_Plex_Serif({
+	subsets: ["latin"],
+	style: ["normal", "italic"],
+	weight: ["500", "700"],
+});
+
+const condensed = IBM_Plex_Sans_Condensed({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
 	weight: ["500", "700"],
@@ -53,7 +61,7 @@ export default function PreBuilt() {
 		<div className={styles.athenian}>
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
-					<div className={mono.className}>PRE-BUILT + OFF-THE-SHELF</div>
+					<div className={mono.className}>PRE-CONFIGURED + OFF-THE-SHELF</div>
 				</div>
 			</div>
 			<Link className={styles.audio} href='https://play.winterdelta.com/'>
@@ -63,7 +71,9 @@ export default function PreBuilt() {
 				</div> */}
 				<div className={styles.athens}>
 					<div className={styles.device}>
-						{/* <span className={styles.firstlight}>Firstlight:</span> */}
+						{/* <span className={styles.firstlight}>
+							Welcome to the First Light Platform. Powered by AI.
+						</span> */}
 						<span className={styles.musicIcon}>ATHENO</span>
 						<span className={styles.d}>
 							<Mobile size={24} />
@@ -154,7 +164,7 @@ export default function PreBuilt() {
 					<span className={styles.fit}>CARBON ZERO (IN DEV)</span>
 				</div>
 			</div>
-			<div className={styles.ics}>
+			{/* <div className={styles.ics}>
 				<div className={styles.di}>
 					<div className={styles.faviD}>
 						<Image
@@ -189,8 +199,22 @@ export default function PreBuilt() {
 					</div>
 					<div className={styles.nova}>Deepgram | Nova</div>
 				</div>
-			</div>
-			<div className={styles.price}>Price: £0 - £8.00</div>
+			</div> */}
+			{/* <div className={styles.price}>
+				<span className={mono.className}>0 - $8.00</span>{" "}
+				<span>
+					Atheno - the AI - will be in touch during usage. So you know if you
+					are nearing usage limits.
+				</span>
+			</div> */}
+			<Link href='https://atheno.winterdelta.com'>
+				<div className={styles.authBtn}>
+					<div className={styles.authi}>
+						<IntentRequestActive size={16} />
+					</div>
+					<div className={styles.authenLabel}>AUTHENTICATE</div>
+				</div>
+			</Link>
 		</div>
 	);
 }

@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import React from "react";
 import { Sustainability } from "@carbon/icons-react";
+import PreBuilt from "@/components/Shop/prebuilt";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -224,9 +225,14 @@ export default function Home() {
 				{/* <span className={styles.winterdelta}>
 					<span className={styles.logo}>W∆</span>
 				</span> */}
-				{/* <span className={styles.headline}>AIs</span> */}
+				<span className={styles.headline}>
+					<span>AIs</span>
+					<span className={styles.urduH}>
+						<span className={ar.className}>مصنوعی ذہانتیں</span>
+					</span>
+				</span>
 			</div>
-			{/* <PreBuilt /> */}
+			<PreBuilt />
 			{/* <div className={styles.athenian}>
 				<div className={styles.introContainer}>
 					<div className={styles.intro}>
@@ -272,11 +278,11 @@ export default function Home() {
 				</div>
 			</div> */}
 			{/* <div className={styles.divider} /> */}
-			{/* <div className={styles.introContainer}> */}
-			{/* <div className={styles.intro}>
+			<div className={styles.introContainer}>
+				<div className={styles.intro}>
 					<div className={mono.className}>STATE-OF-THE-ART</div>
-				</div> */}
-			{/* </div> */}
+				</div>
+			</div>
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					<div className={styles.dividerHeader} />
@@ -362,6 +368,12 @@ export default function Home() {
 			</div> */}
 			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.margin} /> */}
+			<div className={styles.aiContainer}>
+				<span className={styles.headline}>Talk to Client Services</span>
+				<span className={styles.urduH}>
+					<span className={ar.className}>کلائنٹ سروسز سے بات کریں</span>
+				</span>
+			</div>
 			<div className={styles.chatContainer}>
 				<AI />
 			</div>

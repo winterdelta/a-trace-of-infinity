@@ -222,7 +222,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
-	/* border: 1px dotted var(--outline); */
+	border: 1px dotted var(--outline);
 	border-radius: 20px;
 	height: fit-content;
 	padding: 30px;
@@ -792,4 +792,28 @@
 .fit {
 	color: black;
 	padding-right: 4px;
+}
+
+@media (max-width: 900px) {
+	.aiContainer {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		border-bottom: 1px dotted var(--outline);
+		width: 100vw;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 900px) {
+	.aiContainer {
+		display: none;
+	}
+}
+
+.urduH {
+	font-size: 18px;
+	padding-left: 6px;
+	direction: rtl;
 }
