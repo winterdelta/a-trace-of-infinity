@@ -820,7 +820,6 @@
 }
 
 .fi {
-	/* padding-right: 4px; */
 	padding: 4px;
 	margin: 4px;
 	display: flex;
@@ -832,7 +831,6 @@
 }
 
 .fit {
-	/* margin-left: 6px; */
 	color: white;
 }
 
@@ -865,4 +863,9 @@
 
 .dgi {
 	padding: 12px;
+}
+
+.firstlight {
+	margin-left: 10px;
+	margin-top: 3px;
 }

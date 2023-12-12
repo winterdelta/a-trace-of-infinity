@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import PreBuilt from "@/components/Shop/prebuilt";
 import React from "react";
+import { Sustainability } from "@carbon/icons-react";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -279,9 +280,7 @@ export default function Home() {
 			</div>
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
-					{/* <div className={mono.className}>HYDRA</div> */}
 					<div className={styles.dividerHeader} />
-					{/* <div className={ibm.className}>craft</div> */}
 				</div>
 			</div>
 			<div className={styles.itemRow}>
@@ -302,8 +301,11 @@ export default function Home() {
 						<div className={styles.feature}>Voice</div>
 						<div className={styles.feature}>Web</div>
 						<div className={styles.feature}>Analytics</div>
-						<div className={styles.featureC}>
-							Carbon-neutral - cero - as standard
+						<div className={styles.f}>
+							<span className={styles.fi}>
+								<Sustainability size={16} />
+							</span>
+							<span className={styles.fit}>CARBON ZERO (IN DEV)</span>
 						</div>
 					</div>
 					{/* <div className={styles.itemDesc}></div> */}

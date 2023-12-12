@@ -63,6 +63,7 @@ export default function PreBuilt() {
 				</div> */}
 				<div className={styles.athens}>
 					<div className={styles.device}>
+						{/* <span className={styles.firstlight}>Firstlight:</span> */}
 						<span className={styles.musicIcon}>ATHENO</span>
 						<span className={styles.d}>
 							<Mobile size={24} />
