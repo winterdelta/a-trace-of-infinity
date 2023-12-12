@@ -6,7 +6,6 @@ import {
 	IBM_Plex_Sans_Arabic,
 	UnifrakturMaguntia,
 } from "next/font/google";
-import PreBuilt from "@/components/Shop/prebuilt";
 import React from "react";
 import { Sustainability } from "@carbon/icons-react";
 
@@ -225,9 +224,9 @@ export default function Home() {
 				{/* <span className={styles.winterdelta}>
 					<span className={styles.logo}>W∆</span>
 				</span> */}
-				<span className={styles.headline}>AIs</span>
+				{/* <span className={styles.headline}>AIs</span> */}
 			</div>
-			<PreBuilt />
+			{/* <PreBuilt /> */}
 			{/* <div className={styles.athenian}>
 				<div className={styles.introContainer}>
 					<div className={styles.intro}>
@@ -273,11 +272,11 @@ export default function Home() {
 				</div>
 			</div> */}
 			{/* <div className={styles.divider} /> */}
-			<div className={styles.introContainer}>
-				<div className={styles.intro}>
+			{/* <div className={styles.introContainer}> */}
+			{/* <div className={styles.intro}>
 					<div className={mono.className}>STATE-OF-THE-ART</div>
-				</div>
-			</div>
+				</div> */}
+			{/* </div> */}
 			<div className={styles.title}>
 				<div className={styles.styllcraft}>
 					<div className={styles.dividerHeader} />
@@ -286,7 +285,7 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade</span> Spun with
+						<span className={styles.bold}>Enterprise-grade AIs</span> Spun with
 						sophisticated configurations. Request interfaces injected with AIs.
 						Dock new technologies into legacy stacks. Capture and advance the
 						capitalisation of pre-existing or new markets.
@@ -372,7 +371,8 @@ export default function Home() {
 				</span> */}
 				<div className={styles.marsLabel}>
 					<span className={styles.logo}>W∆</span> \\ &apos;A TRACE OF
-					INFINITY&apos; BUILD
+					INFINITY&apos;
+					{/* BUILD */}
 				</div>
 			</div>
 		</main>
