@@ -289,7 +289,9 @@ export default function Home() {
 			{/* <div className={styles.divider} /> */}
 			<div className={styles.introContainer}>
 				<div className={styles.intro}>
-					<div className={mono.className}>STATE-OF-THE-ART</div>
+					<div className={mono.className}>
+						STATE-OF-THE-ART + PRODUCTION-GRADE + R&D
+					</div>
 				</div>
 			</div>
 			<div className={styles.title}>
