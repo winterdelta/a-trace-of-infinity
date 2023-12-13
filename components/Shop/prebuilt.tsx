@@ -221,10 +221,10 @@ export default function PreBuilt() {
 						<div className={styles.authi}>
 							<ArrowRight size={16} />
 						</div>
-						<div className={styles.authenLabel}>EXPLORE</div>
+						<div className={styles.authenLabel}>GET</div>
 					</div>
 				</Link>
-				<div className={styles.p}>0 - $8</div>
+				<div className={styles.p}>0 - $8 / month</div>
 			</div>
 		</div>
 	);
