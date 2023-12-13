@@ -234,9 +234,9 @@ export default function Home() {
 				</span> */}
 				<span className={styles.headline}>
 					<span>AIs</span>
-					<span className={styles.urduH}>
+					{/* <span className={styles.urduH}>
 						<span className={urdu.className}>مصنوعی ذہانتیں</span>
-					</span>
+					</span> */}
 				</span>
 			</div>
 			<PreBuilt />
