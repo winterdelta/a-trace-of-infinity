@@ -8,8 +8,8 @@ import { IBM_Plex_Serif } from "next/font/google";
 
 const mono = IBM_Plex_Serif({
 	subsets: ["latin"],
-	style: ["italic"],
-	weight: ["300"],
+	style: ["normal"],
+	weight: ["200"],
 });
 
 const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
