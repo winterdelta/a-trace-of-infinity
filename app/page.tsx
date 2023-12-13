@@ -10,6 +10,7 @@ import {
 import React from "react";
 import { Sustainability } from "@carbon/icons-react";
 import PreBuilt from "@/components/Shop/prebuilt";
+import Copy from "@/components/AI/Copy";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -240,7 +241,8 @@ export default function Home() {
 				</span>
 			</div>
 			<PreBuilt />
-			{/* <div className={styles.athenian}>
+			<Copy />
+			{/* <div className={st les.athenian}>
 				<div className={styles.introContainer}>
 					<div className={styles.intro}>
 						<div className={mono.className}>PRE-BUILT:</div>

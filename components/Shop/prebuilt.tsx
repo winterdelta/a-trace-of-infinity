@@ -1,4 +1,5 @@
 import {
+	ArrowRight,
 	Collaborate,
 	IbmWatsonLanguageTranslator,
 	IbmWatsonSpeechToText,
@@ -218,9 +219,9 @@ export default function PreBuilt() {
 				<Link href='https://atheno.winterdelta.com'>
 					<div className={styles.authBtn}>
 						<div className={styles.authi}>
-							<IntentRequestActive size={16} />
+							<ArrowRight size={16} />
 						</div>
-						<div className={styles.authenLabel}>AUTHENTICATE</div>
+						<div className={styles.authenLabel}>EXPLORE</div>
 					</div>
 				</Link>
 				<div className={styles.p}>0 - $8</div>

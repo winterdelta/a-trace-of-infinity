@@ -78,8 +78,10 @@
 
 .overlay {
 	position: absolute;
-	backdrop-filter: saturate(200%) invert(100%);
-	-webkit-backdrop-filter: saturate(200%) invert(100%);
+	backdrop-filter: 
+	/* saturate(200%) */ invert(100%);
+	-webkit-backdrop-filter: 
+	/* saturate(200%) */ invert(100%);
 	height: 70vh;
 	width: 100vw;
 	top: 0px;
@@ -87,8 +89,10 @@
 
 @media (prefers-color-scheme: dark) {
 	.overlay {
-		backdrop-filter: saturate(100%) hue-rotate(490deg);
-		-webkit-backdrop-filter: saturate(100%) hue-rotate(490deg);
+		backdrop-filter: 
+		/* saturate(100%) */ hue-rotate(490deg);
+		-webkit-backdrop-filter: 
+		/* saturate(100%) */ hue-rotate(490deg);
 	}
 }
 
