@@ -5,12 +5,12 @@ import {
 	IbmWatsonSpeechToText,
 	IbmWatsonTextToSpeech,
 	IbmWatsonxAssistant,
-	IntentRequestActive,
 	Laptop,
 	MachineLearningModel,
 	Mobile,
 	Music,
 	ShareKnowledge,
+	ShoppingCartPlus,
 	Sustainability,
 	VoiceActivate,
 } from "@carbon/icons-react";
@@ -22,8 +22,8 @@ import {
 	IBM_Plex_Sans_Condensed,
 	Noto_Nastaliq_Urdu,
 } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
+import Click from "@/components/Shop/click";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -56,14 +56,8 @@ const ar = IBM_Plex_Sans_Arabic({
 
 export default function PreBuilt() {
 	const gen_color = () => {
-		// return randomColor({
-		// 	hue: "#4D5358",
-		// });
-
 		return "transparent";
 	};
-
-	// const gen_color = "white";
 
 	return (
 		<div className={styles.athenian}>
@@ -72,7 +66,7 @@ export default function PreBuilt() {
 					<div className={mono.className}>PRE-CONFIGURED + OFF-THE-SHELF</div>
 				</div>
 			</div>
-			<Link className={styles.audio} href='https://play.winterdelta.com/'>
+			<Link className={styles.audio} href='https://atheno.winterdelta.com/'>
 				{/* <div className={styles.button}>
 					<AssemblyReference size={32} />
 					<span className={serif.className}>A</span>
@@ -216,15 +210,11 @@ export default function PreBuilt() {
 				</span>
 			</div> */}
 			<div className={styles.priceWid}>
-				<Link href='https://atheno.winterdelta.com'>
-					<div className={styles.authBtn}>
-						<div className={styles.authi}>
-							<ArrowRight size={16} />
-						</div>
-						<div className={styles.authenLabel}>GET</div>
-					</div>
-				</Link>
-				<div className={styles.p}>0 - $8 / month</div>
+				<Click />
+				<div className={styles.p}>
+					0 - $8 / month
+					<ShoppingCartPlus size={16} />
+				</div>
 			</div>
 		</div>
 	);

@@ -938,3 +938,41 @@
 	font-style: italic;
 	font-weight: bold;
 }
+
+.clickContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 0px;
+	position: fixed;
+	height: 100svh;
+	width: 100vw;
+	z-index: 10000;
+}
+
+.click {
+	border: 2px solid var(--outline);
+	border-radius: 40px;
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
+	height: 70svh;
+	width: 70vw;
+	z-index: 10000;
+	padding: 20px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 2px solid white; */
+	border-radius: 100px;
+	background-color: transparent;
+	color: white;
+}
