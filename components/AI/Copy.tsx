@@ -4,12 +4,18 @@ import { useChat } from "ai/react";
 import { useEffect, useCallback } from "react";
 import styles from "./page.module.css";
 import { ChatRequestOptions } from "ai";
-import { IBM_Plex_Serif } from "next/font/google";
+import { IBM_Plex_Serif, IBM_Plex_Sans } from "next/font/google";
 
 const mono = IBM_Plex_Serif({
 	subsets: ["latin"],
 	style: ["normal"],
 	weight: ["200"],
+});
+
+const sans = IBM_Plex_Sans({
+	subsets: ["latin"],
+	style: ["normal"],
+	weight: ["500"],
 });
 
 const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
@@ -52,7 +58,7 @@ export default function AI() {
 			<div>
 				{messages.map((m) => (
 					<div className={styles.mai} key={m.id}>
-						<div className={mono.className}>{m.content}</div>
+						<div className={sans.className}>{m.content}</div>
 					</div>
 				))}
 			</div>
