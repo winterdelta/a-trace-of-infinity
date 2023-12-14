@@ -380,7 +380,7 @@ export default function Home() {
 			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.margin} /> */}
 			<div className={styles.aiContainer}>
-				<span className={styles.headline}>Talk to Client Services</span>
+				<span className={styles.headline}>Chat</span>
 				{/* <span className={styles.urduH}>
 					<span className={urdu.className}>کلائنٹ سروسز سے بات کریں</span>
 				</span> */}
