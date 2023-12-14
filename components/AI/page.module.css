@@ -199,3 +199,7 @@
 	z-index: 0;
 	background: linear-gradient(180deg, transparent 0%, black 100%);
 }
+
+.mai {
+	font-size: 32px;
+}
