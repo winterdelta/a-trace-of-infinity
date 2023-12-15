@@ -72,11 +72,16 @@ export default function PreBuilt() {
 					<span className={serif.className}>A</span>
 				</div> */}
 				<div className={styles.athens}>
+					{/* <div className={styles.firstlight}>
+						Explore the First Light platform.
+					</div> */}
 					<div className={styles.device}>
-						{/* <span className={styles.firstlight}>
-							Welcome to the First Light Platform. Powered by AI.
-						</span> */}
-						<span className={styles.musicIcon}>ATHENO</span>
+						<span className={styles.musicIcon}>
+							<span>ATHENO</span>
+							<span className={styles.ml}>
+								<MachineLearningModel size={16} />
+							</span>
+						</span>
 						<span className={styles.d}>
 							<Mobile size={24} />
 						</span>
@@ -151,7 +156,7 @@ export default function PreBuilt() {
 					<span className={styles.fi}>
 						<Collaborate size={16} />
 					</span>
-					<span className={styles.fit}>COLLABORATION</span>
+					<span className={styles.fit}>COLLABORATIVE</span>
 				</div>
 				<div style={{ backgroundColor: gen_color() }} className={styles.f}>
 					<span className={styles.fi}>
@@ -211,10 +216,18 @@ export default function PreBuilt() {
 			</div> */}
 			<div className={styles.priceWid}>
 				<Click />
-				<div className={styles.p}>
-					0 - $8 / month
-					<ShoppingCartPlus size={16} />
-				</div>
+				<span className={styles.p}>
+					{/* <span>Messaging Platform</span> */}
+					{/* <span className={styles.division} /> */}
+					<span>0 - $8</span>
+					<span className={styles.division} />
+					<span className={styles.month}>
+						<span className={mono.className}>MONTH \ UNCAPPED</span>
+						<span className={styles.fair}>
+							<span className={mono.className}> FAIR-USAGE</span>
+						</span>
+					</span>
+				</span>
 			</div>
 		</div>
 	);
