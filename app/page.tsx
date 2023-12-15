@@ -242,6 +242,20 @@ export default function Home() {
 			</div>
 			<PreBuilt />
 			<Copy />
+			{/* <div className={styles.imageContainer}>
+				<Image
+					src='/M2.jpg'
+					className={styles.image}
+					alt=''
+					fill={true}
+					quality={100}
+					style={{
+						objectFit: "cover",
+						overflow: "hidden",
+					}}
+					sizes='(max-width: 768px) 250px, 400px'
+				/>
+			</div> */}
 			{/* <div className={st les.athenian}>
 				<div className={styles.introContainer}>
 					<div className={styles.intro}>
@@ -326,20 +340,6 @@ export default function Home() {
 					</div>
 					{/* <div className={styles.itemDesc}></div> */}
 				</div>
-				{/* <div className={styles.imageContainer}>
-					
-						src='/M1.jpg'
-						className={styles.image}
-						alt=''
-						fill={true}
-						quality={100}
-						style={{
-							objectFit: "cover",
-							overflow: "hidden",
-						}}
-						sizes='(max-width: 768px) 250px, 400px'
-					/>
-				</div> */}
 				{/* <div className={styles.divider} /> */}
 				{/* <div className={styles.divider} />
 				<div className={styles.nort3}>
@@ -380,7 +380,7 @@ export default function Home() {
 			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.margin} /> */}
 			<div className={styles.aiContainer}>
-				<span className={styles.headline}>Chat</span>
+				<span className={styles.headline}>AI / Client Services</span>
 				{/* <span className={styles.urduH}>
 					<span className={urdu.className}>کلائنٹ سروسز سے بات کریں</span>
 				</span> */}

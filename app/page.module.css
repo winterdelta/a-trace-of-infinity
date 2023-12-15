@@ -4,6 +4,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100vw;
+	margin-bottom: 200px;
 }
 
 .chatContainer {
@@ -314,8 +315,8 @@
 
 .imageContainer {
 	overflow: hidden;
-	width: 50vw;
-	height: calc(50vw / (2.38));
+	width: 40vw;
+	height: calc(40vw / (2.38));
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -326,6 +327,8 @@
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	padding: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
 }
 
 .linearBlur {
@@ -346,7 +349,9 @@
 		align-items: center;
 		flex-direction: column;
 		padding-top: 40px;
-		border-radius: 30px;
+		border-radius: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
 	}
 
 	.linearBlur {
@@ -502,7 +507,7 @@
 	}
 
 	.image {
-		border-radius: 30px;
+		border-radius: 10px;
 		border: 1px dotted var(--outline);
 	}
 
