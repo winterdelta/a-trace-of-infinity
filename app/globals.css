@@ -112,6 +112,7 @@
 	--font: black;
 	--ai-raised: #0d0f1a;
 	--image-border: #dfdfdf;
+	--pink: #e1d3d3;
 }
 
 /* :root {
@@ -223,6 +224,8 @@
 		--font: white;
 		--ai-raised: #0d0f1a;
 		--image-border: #bfe0ff;
+
+		--pink: #e1d3d3;
 	}
 }
 
