@@ -5,7 +5,7 @@ export const config = {
 };
 
 const middleware = createMiddleware({
-	key: "ajkey_yourkey",
+	key: process.env.OPENAI_API_KEY ?? "",
 	rules: [
 		rateLimit({
 			mode: "LIVE",
