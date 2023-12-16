@@ -5,7 +5,7 @@ export const config = {
 };
 
 const middleware = createMiddleware({
-	key: process.env.OPENAI_API_KEY!,
+	key: process.env.ARC_JET_KEY!,
 	rules: [
 		rateLimit({
 			mode: "LIVE",
