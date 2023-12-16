@@ -1,5 +1,6 @@
 import {
 	ArrowRight,
+	Buoy,
 	Collaborate,
 	IbmWatsonLanguageTranslator,
 	IbmWatsonSpeechToText,
@@ -8,7 +9,9 @@ import {
 	Laptop,
 	MachineLearningModel,
 	Mobile,
+	Money,
 	Music,
+	Purchase,
 	ShareKnowledge,
 	ShoppingCartPlus,
 	Sustainability,
@@ -78,16 +81,19 @@ export default function PreBuilt() {
 					<div className={styles.device}>
 						<span className={styles.musicIcon}>
 							<span>ATHENO</span>
-							<span className={styles.ml}>
+							{/* <span className={styles.ml}>
 								<MachineLearningModel size={16} />
-							</span>
+							</span> */}
 						</span>
 						<span className={styles.d}>
+							<MachineLearningModel size={24} />
+						</span>
+						{/* <span className={styles.d}>
 							<Mobile size={24} />
 						</span>
 						<span className={styles.d}>
 							<Laptop size={24} />
-						</span>
+						</span> */}
 					</div>
 					{/* <div className={styles.buttons}>
 						<div className={styles.b}>
@@ -215,19 +221,28 @@ export default function PreBuilt() {
 				</span>
 			</div> */}
 			<div className={styles.priceWid}>
-				<Click />
-				<span className={styles.p}>
-					{/* <span>Messaging Platform</span> */}
-					{/* <span className={styles.division} /> */}
-					<span>0 - $8</span>
-					<span className={styles.division} />
-					<span className={styles.month}>
-						<span className={mono.className}>MONTH \ UNCAPPED</span>
-						<span className={styles.fair}>
-							<span className={mono.className}> FAIR-USAGE</span>
+				<div className={styles.slider}>
+					<Click />
+					<span className={styles.p}>
+						<span className={styles.bi}>
+							<Purchase size={24} />
+						</span>
+						{/* <span className={styles.division} /> */}
+						<span>
+							0.00 <ArrowRight size={16} /> $8.00
+						</span>
+						<span className={styles.division} />
+						<span className={styles.month}>
+							<span className={mono.className}>MONTH \ UNLIMITED REQUESTS</span>
+							<span className={styles.fair}>
+								<span className={mono.className}>
+									{" "}
+									FAIR-USAGE \ CAPPED PRICE
+								</span>
+							</span>
 						</span>
 					</span>
-				</span>
+				</div>
 			</div>
 		</div>
 	);

@@ -43,7 +43,7 @@ export default function PreBuilt() {
 						<div className={styles.authi}>
 							<Compass size={16} />
 						</div>
-						<div className={styles.authenLabel}>SECURE EXPLORE</div>
+						<div className={styles.authenLabel}>AUTHENTICATE</div>
 					</button>
 				</div>
 			)}
