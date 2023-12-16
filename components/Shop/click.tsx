@@ -41,7 +41,7 @@ export default function PreBuilt() {
 				<div className={styles.getContainer}>
 					<button onClick={() => setClick(true)} className={styles.authBtn}>
 						<div className={styles.authi}>
-							<Compass size={16} />
+							<IntentRequestActive size={16} />
 						</div>
 						<div className={styles.authenLabel}>AUTHENTICATE</div>
 					</button>

@@ -11,6 +11,7 @@ import React from "react";
 import { Sustainability } from "@carbon/icons-react";
 import PreBuilt from "@/components/Shop/prebuilt";
 import Copy from "@/components/AI/Copy";
+import Image from "next/image";
 
 const mono = IBM_Plex_Mono({
 	subsets: ["latin"],
@@ -240,8 +241,8 @@ export default function Home() {
 					</span> */}
 				</span>
 			</div>
-			<PreBuilt />
-			<Copy />
+			{/* <PreBuilt /> */}
+			{/* <Copy /> */}
 			{/* <div className={styles.imageContainer}>
 				<Image
 					src='/M2.jpg'
@@ -363,20 +364,7 @@ export default function Home() {
 			{/* <div className={styles.marsLabelBuild}>
 				&apos;A TRACE OF INFINITY&apos; BUILD
 			</div> */}
-			{/* <div className={styles.imageContainer}>
-				<Image
-					src='/M2.jpg'
-					className={styles.image}
-					alt=''
-					fill={true}
-					quality={100}
-					style={{
-						objectFit: "cover",
-						overflow: "hidden",
-					}}
-					sizes='(max-width: 768px) 250px, 400px'
-				/>
-			</div> */}
+
 			{/* <div className={styles.divider} /> */}
 			{/* <div className={styles.margin} /> */}
 			<div className={styles.aiContainer}>

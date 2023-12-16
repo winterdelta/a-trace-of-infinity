@@ -316,7 +316,7 @@
 .imageContainer {
 	overflow: hidden;
 	width: 40vw;
-	height: calc(40vw / (2.38));
+	height: calc(40vw / (2.38 * 2));
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -343,7 +343,7 @@
 @media (max-width: 1300px) {
 	.imageContainer {
 		width: calc(100vw - 20px);
-		height: calc((100vw - 20px));
+		height: calc((20vw - 20px));
 		display: flex;
 		justify-content: center;
 		align-items: center;
