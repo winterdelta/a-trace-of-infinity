@@ -18,7 +18,7 @@
 @media (min-width: 1300px) {
 	.chat {
 		margin: 0px;
-		max-height: calc(100vw - 60px);
+		max-height: calc(100vw - 120px);
 		backdrop-filter: blur(100px);
 		-webkit-backdrop-filter: blur(100px);
 		background-color: transparent;
@@ -68,7 +68,7 @@
 	padding-left: 20px;
 	font-weight: bold;
 	padding-bottom: 40px;
-	padding-top: 20px;
+	padding-top: 60px;
 	line-height: 3em;
 }
 
@@ -266,12 +266,6 @@
 	font-style: italic;
 }
 
-@media (prefers-color-scheme: dark) {
-	.price {
-		color: white;
-		border: 1px dotted white;
-	}
-}
 
 .feature,
 .featureC {
@@ -791,12 +785,12 @@
 	align-items: center;
 	width: fit-content;
 	/* color: white; */
-	color: white;
+	color: black;
 	border-radius: 100px;
 }
 
 .fit {
-	color: white;
+	color: black;
 	padding-right: 4px;
 }
 
@@ -824,4 +818,15 @@
 	padding-left: 6px;
 	direction: rtl;
 	color: var(--secondary-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+	.price {
+		color: white;
+		border: 1px dotted white;
+	}
+
+	.fi, .fit {
+		color: white;
+	}
 }
