@@ -83,10 +83,10 @@
 	height: 70vh;
 	width: 100vw;
 	top: 0px;
-	animation: filterAnimation 55s infinite;
+	/* animation: filterAnimation 55s infinite; */
 }
 
-@keyframes filterAnimation {
+/* @keyframes filterAnimation {
 	0% {
 		backdrop-filter: saturate(0%) invert(100%);
 		-webkit-backdrop-filter: saturate(0%) invert(100%);
@@ -95,7 +95,7 @@
 		backdrop-filter: saturate(100%) invert(100%);
 		-webkit-backdrop-filter: saturate(100%) invert(100%);
 	}
-}
+} */
 
 @media (prefers-color-scheme: dark) {
 	.overlay {
@@ -105,10 +105,10 @@
 		-webkit-backdrop-filter: saturate(00%) /* sepia(100%) */ hue-rotate(90deg);
 		/* brightness(100%); */
 		/* contrast(340%); */
-		animation: filterAnimation_ 40s infinite;
+		/* animation: filterAnimation_ 40s infinite; */
 	}
 
-	@keyframes filterAnimation_ {
+	/* @keyframes filterAnimation_ {
 		0% {
 			backdrop-filter: saturate(0%);
 			-webkit-backdrop-filter: saturate(0%);
@@ -117,7 +117,7 @@
 			backdrop-filter: saturate(100%);
 			-webkit-backdrop-filter: saturate(100%);
 		}
-	}
+	} */
 }
 
 .ai {
