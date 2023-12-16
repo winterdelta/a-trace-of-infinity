@@ -775,10 +775,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: row;
-	color: black;
+	color: white;
 	border: 1px solid var(--outline);
 	/* background-color: transparent; */
-	background-color: white;
+	/* background-color: white; */
 	font-weight: bold;
 	width: fit-content;
 }
@@ -791,12 +791,12 @@
 	align-items: center;
 	width: fit-content;
 	/* color: white; */
-	color: black;
+	color: white;
 	border-radius: 100px;
 }
 
 .fit {
-	color: black;
+	color: white;
 	padding-right: 4px;
 }
 
