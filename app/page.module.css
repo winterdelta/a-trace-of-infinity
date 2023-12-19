@@ -266,7 +266,6 @@
 	font-style: italic;
 }
 
-
 .feature,
 .featureC {
 	white-space: nowrap;
@@ -300,6 +299,9 @@
 
 .bold {
 	font-weight: 700;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	padding-bottom: 5px;
 }
 
@@ -826,7 +828,13 @@
 		border: 1px dotted white;
 	}
 
-	.fi, .fit {
+	.fi,
+	.fit {
 		color: white;
 	}
+}
+
+.ic {
+	margin: 10px 10px 10px 0px;
+	font-style: italic;
 }

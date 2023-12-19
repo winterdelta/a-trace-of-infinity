@@ -8,7 +8,12 @@ import {
 	UnifrakturMaguntia,
 } from "next/font/google";
 import React from "react";
-import { Sustainability } from "@carbon/icons-react";
+import {
+	CabinCareAlt,
+	FlightInternational,
+	Plane,
+	Sustainability,
+} from "@carbon/icons-react";
 import PreBuilt from "@/components/Shop/prebuilt";
 import Copy from "@/components/AI/Copy";
 import Image from "next/image";
@@ -317,9 +322,15 @@ export default function Home() {
 			<div className={styles.itemRow}>
 				<div className={styles.items}>
 					<div className={styles.item}>
-						<span className={styles.bold}>Enterprise-grade</span> Spun with
-						sophisticated configurations. Request interfaces injected with AIs.
-						Dock new technologies into legacy stacks. Capture and advance the
+						<span className={styles.bold}>
+							<span className={styles.ic}>
+								<FlightInternational size={16} />
+							</span>
+							<span className={styles.ic}>FlightMode</span>
+						</span>
+						Enterprise-grade encrypted-apps spun with sophisticated
+						configuration. Request interfaces injected with AIs. Dock new
+						technologies into legacy stacks. Capture and advance the
 						capitalisation of pre-existing or new markets.
 					</div>
 					<div className={styles.row}>
@@ -332,6 +343,7 @@ export default function Home() {
 						<div className={styles.feature}>Voice</div>
 						<div className={styles.feature}>Web</div>
 						<div className={styles.feature}>Analytics</div>
+						<div className={styles.feature}>Encryption</div>
 						<div className={styles.f}>
 							<span className={styles.fi}>
 								<Sustainability size={16} />
