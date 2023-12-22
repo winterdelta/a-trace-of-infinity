@@ -334,14 +334,13 @@ export default function Home() {
 						capitalisation of pre-existing or new markets.
 					</div>
 					<div className={styles.row}>
-						<div className={styles.price}>$100K+</div>
+						{/* <div className={styles.price}>$100K+</div> */}
 						{/* <div className={styles.item}>
 							Bleeding Edge: R&D apps designed to push the manifold of what is
 							physically feasible - delivered as fast as feasible.
 						</div> */}
 						<div className={styles.feature}>GPT-4</div>
 						<div className={styles.feature}>Voice</div>
-						<div className={styles.feature}>Web</div>
 						<div className={styles.feature}>Analytics</div>
 						<div className={styles.feature}>Encryption</div>
 						<div className={styles.f}>

@@ -4,7 +4,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100vw;
-	margin-bottom: 200px;
+	margin-bottom: 0px;
 }
 
 .chatContainer {
@@ -527,7 +527,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: row;
-	margin-top: -20vh;
+	margin-top: -40vh;
 	padding-left: 10px;
 	font-size: 24px;
 }
