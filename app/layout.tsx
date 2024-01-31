@@ -5,29 +5,28 @@ import "./globals.css";
 import Nav from "@/components/HUD/nav";
 
 const ibm = IBM_Plex_Sans({
-	subsets: ["latin"],
-	style: ["normal", "italic"],
-	weight: ["500", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["500", "700"],
 });
 
 export const metadata: Metadata = {
-	title: "Winterdelta",
-	description: "Specialised R&D - consumer-grade R&D.",
+  title: "Winterdelta",
+  description: "Specialised R&D - consumer-grade R&D.",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang='en'>
-			<body className={ibm.className}>
-				<Nav />
-				{/* <HUD /> */}
-				{children}
-				<Analytics />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={ibm.className}>
+        <Nav />
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
 }
