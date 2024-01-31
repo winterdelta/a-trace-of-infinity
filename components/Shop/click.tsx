@@ -1,20 +1,14 @@
 "use client";
 
 import {
-  ArrowRight,
-  Close,
   CloseFilled,
-  CloseOutline,
-  Compass,
   IntentRequestActive,
   MagicWand,
-  TwoFactorAuthentication,
 } from "@carbon/icons-react";
 import styles from "./prebuilt.module.css";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-// import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 const ar = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
@@ -23,30 +17,8 @@ const ar = IBM_Plex_Sans_Arabic({
 
 export default function PreBuilt() {
   const [click, setClick] = useState<Boolean>(false);
-  // const targetRef = useRef(null);
-
-  // useEffect(() => {
-  // 	if (click) {
-  // 		disableBodyScroll(targetRef.current);
-  // 	} else {
-  // 		enableBodyScroll(targetRef.current);
-  // 	}
-  // }, [click]);``
-
   return (
-    <div
-    // ref={targetRef}
-    >
-      {/* {!click && (
-				<div className={styles.getContainer}>
-					<button onClick={() => setClick(true)} className={styles.authBtn}>
-						<div className={styles.authi}>
-							<IntentRequestActive size={16} />
-						</div>
-						<div className={styles.authenLabel}>AUTHENTICATE</div>
-					</button>
-				</div>
-			)} */}
+    <div>
       {click && (
         <div className={styles.clickContainer}>
           <div className={styles.click}>
