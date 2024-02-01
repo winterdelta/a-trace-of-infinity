@@ -27,7 +27,7 @@ export async function POST() {
 		
 		This is some of the copy designed for the Winterdelta web homepage asset 'Traces of Infinity'.
 		
-		Create a header for the site. 2 sentences max.
+		Create a header for the site. 2 sentences max. DO NOT WRAP YOUR RESPONSE IN QUOTATION MARKS.
 		
 		Tone: In terms of tone, aim for an Ian Fleming style cadence, with more monotony. Write extremely flat, but read as well as it sounds. Appeal to the viewer or listener with a similar sensibility in regards to gender and relationship roles. Create a header that appeals extremely subtly in terms of emotion and romance - be fundamentally pragmatic, given that you are writing for a professional, corporate user typically accessing their web browser in an office setting . Do not be too terminologically dense; offer a bare simplicity.
 		
