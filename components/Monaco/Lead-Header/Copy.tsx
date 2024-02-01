@@ -2,7 +2,7 @@
 
 import { useChat } from "ai/react";
 import { useEffect, useCallback } from "react";
-import styles from "./copy.module.css";
+import styles from "./Copy.module.css";
 import { ChatRequestOptions } from "ai";
 import { IBM_Plex_Serif, IBM_Plex_Sans } from "next/font/google";
 
@@ -22,7 +22,7 @@ const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
 
 export default function AI() {
   const { messages, append } = useChat({
-    api: "/api/ai-copy",
+    api: "/api/lead-header",
   });
 
   const handleSubmit = useCallback(

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./page.module.css";
+import styles from "./ai.module.css";
 import { IBM_Plex_Sans } from "next/font/google";
 import { ChartRelationship, Cognitive, SendFilled } from "@carbon/icons-react";
 import { useChat } from "ai/react";

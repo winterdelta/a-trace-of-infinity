@@ -1,6 +1,6 @@
 import Horizon from "@/components/Horizon/Vista";
 import styles from "./page.module.css";
-import AI from "@/components/ai";
+import AI from "@/components/Monaco/Chat/ai";
 import {
   IBM_Plex_Mono,
   IBM_Plex_Sans_Arabic,
@@ -10,6 +10,7 @@ import {
 import React from "react";
 import { FlightInternational, Sustainability } from "@carbon/icons-react";
 import Multi_lingual from "@/components/Multi-lingual/Main";
+import Lead_Header from "@/components/Monaco/Lead-Header/Copy";
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -39,6 +40,9 @@ export default function Home() {
       <div className={styles.linear_fade} />
       <Horizon />
       <Multi_lingual />
+
+      <Lead_Header />
+
       <div className={styles.divider} />
       {/* <div className={styles.title}>
         <span className={styles.headline}>

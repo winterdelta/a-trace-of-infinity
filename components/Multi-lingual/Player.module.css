@@ -4,8 +4,8 @@
   align-items: center;
   border-radius: 1000px;
   /* padding: 30px; */
-  height: 104px;
-  width: 104px;
+  height: 84px;
+  width: 84px;
   margin-left: 10px;
   border: 1px dashed var(--secondary-grey);
 }
