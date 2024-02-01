@@ -29,6 +29,12 @@
   text-decoration-color: var(--inverse);
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lang_unselected {
   color: var(--secondary-grey);
 }
