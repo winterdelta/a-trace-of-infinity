@@ -10,7 +10,7 @@ import {
 const english = IBM_Plex_Sans({
   subsets: ["latin"],
   style: ["normal"],
-  weight: ["500"],
+  weight: ["700"],
 });
 
 const urdu = IBM_Plex_Sans_Arabic({
@@ -47,7 +47,7 @@ export default function Languages({ languages, lang, setLang }: LangProps) {
             lang === language.name ? styles.lang : styles.lang_unselected
           }
         >
-          <div className={chinese.className}>{language.name}</div>
+          <div className={english.className}>{language.name}</div>
         </button>
       ))}
     </div>
