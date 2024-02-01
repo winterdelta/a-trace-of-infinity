@@ -144,19 +144,14 @@
 .urdu {
   margin-top: 10px;
   margin-left: 10px;
-  /* margin-bottom: 20px; */
-  /* direction: rtl; */
-  /* padding-left: 10px; */
   font-size: 18px;
   color: var(--secondary-grey);
 }
 
 .divider {
   width: 100vw;
-  height: 2px;
-  /* margin-bottom: 20px; */
-  margin-top: 10px;
-  background-color: var(--outline);
+  margin-top: 20px;
+  border-top: 1px dotted var(--outline);
 }
 
 .enterprise {

@@ -39,6 +39,7 @@ export default function Home() {
       <div className={styles.linear_fade} />
       <Horizon />
       <Multi_lingual />
+      <div className={styles.divider} />
       {/* <div className={styles.title}>
         <span className={styles.headline}>
           <span className={styles.headline}>AIs</span>
