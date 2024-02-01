@@ -94,9 +94,9 @@ export default function Home() {
       <div className={styles.chatContainer}>
         <AI />
       </div>
-      <div className={styles.label}>
+      {/* <div className={styles.label}>
         <span className={styles.logo}>W∆</span> &apos;TRACES OF INFINITY&apos;
-      </div>
+      </div> */}
     </main>
   );
 }
