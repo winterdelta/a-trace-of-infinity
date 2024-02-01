@@ -55,9 +55,10 @@ export default function Player({ play_status, play_ctrl }: PlayerProps) {
         <div className={styles.faviD}>
           <Image
             src={
-              window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? "/dolby-icon-grey.svg"
-                : "/dolby-icon-black.svg"
+              //   window.matchMedia("(prefers-color-scheme: dark)").matches
+              // ?
+              "/dolby-icon-grey.svg"
+              // : "/dolby-icon-black.svg"
             }
             className={styles.imageD}
             alt=""
