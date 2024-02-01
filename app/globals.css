@@ -98,7 +98,7 @@
   --font-grey: #5e5e5e;
   --dark-font-grey: #727272;
   --blue-action: black;
-  --outline: rgb(201, 201, 201);
+  --outline: #c9c9c9;
   --opacity: rgba(255, 255, 255, 0.281);
   --bg-raised: #e0e7e8;
   --secondary-text: #a3a3ac;
@@ -207,7 +207,7 @@
     --dark-font-grey: #727272;
     --blue-action: white;
 
-    --outline: #272727;
+    --outline: #333333;
     --opacity: transparent;
     --bg-raised: rgb(10, 10, 10);
     --secondary-text: #232327;

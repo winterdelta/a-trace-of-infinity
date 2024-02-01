@@ -737,6 +737,7 @@
 
 .headline {
   font-size: 24px;
+  display: none;
   padding-left: 10px;
   padding-bottom: 10px;
 }
