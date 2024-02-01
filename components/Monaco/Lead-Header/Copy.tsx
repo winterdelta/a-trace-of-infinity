@@ -14,7 +14,7 @@ const mono = IBM_Plex_Serif({
 
 const sans = IBM_Plex_Sans({
   subsets: ["latin"],
-  style: ["normal"],
+  style: ["normal", "italic"],
   weight: ["500"],
 });
 

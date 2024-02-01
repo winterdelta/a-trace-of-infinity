@@ -18,11 +18,9 @@ export default function Main() {
   ];
 
   return (
-    <>
-      {/* <div className={styles.controls}> */}
+    <div className={styles.main}>
       <Languages languages={languages} lang={lang} setLang={setLang} />
-      {/* </div> */}
       <Player play_status={play} play_ctrl={setPlay} />
-    </>
+    </div>
   );
 }
