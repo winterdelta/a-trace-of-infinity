@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dashed var(--outline);
-  border-radius: 100px;
-  padding: 30px;
+  border-radius: 1000px;
+  /* padding: 30px; */
+  height: 104px;
+  width: 104px;
   margin-left: 10px;
+  border: 1px dashed var(--secondary-grey);
 }
 
 .languages {
@@ -15,27 +17,38 @@
   flex-direction: row;
 }
 
-.lang {
+.lang,
+.lang_unselected {
   margin: 10px;
 }
 
+.lang {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--inverse);
+}
+
+.lang_unselected {
+  color: var(--secondary-grey);
+}
+
 .animate_rotate_clockwise {
-  animation: rotate_anti_clockwise 12s infinite linear,
-    colorTransition 0.4s linear;
-  border: 1px dashed var(--inverse);
+  animation: rotate_anti_clockwise 12s infinite linear;
+  border: 1px dashed var(--secondary-grey);
 }
 
 .animate_rotate_anti_clockwise {
-  animation: rotate_clockwise 12s infinite linear;
+  animation: rotate_clockwise 12s infinite linear,
+    animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@keyframes colorTransition {
-  0% {
-    border-color: var(--outline);
-  }
-  100% {
-    border-color: var(--inverse);
-  }
+.animate_pulsate {
+  animation: animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.animate_pulsate_1s {
+  animation: animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @keyframes rotate_anti_clockwise {
@@ -56,13 +69,25 @@
   }
 }
 
+@keyframes animate_pulsate {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .time {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-left: 20px;
+  margin-left: 20px;
   font-style: italic;
+  padding: 2px;
+  border-radius: 6px;
 }
 
 .player {
@@ -129,4 +154,12 @@
 
 .imageD {
   border: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  /* margin-left: 10px; */
 }

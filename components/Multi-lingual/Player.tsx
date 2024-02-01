@@ -35,7 +35,7 @@ export default function Player({ play_status, play_ctrl }: PlayerProps) {
             play_status && styles.animate_rotate_anti_clockwise
           }`}
         >
-          {play_status ? (
+          {!play_status ? (
             <PlayFilledAlt size={24} />
           ) : (
             <PauseFilled size={24} />
@@ -43,12 +43,22 @@ export default function Player({ play_status, play_ctrl }: PlayerProps) {
         </div>
       </button>
       <div className={styles.time}>
-        <div className={en.className}>01:32</div>
+        <div className={en.className}>
+          01
+          <span className={`${play_status && styles.animate_pulsate_1s}`}>
+            :
+          </span>
+          32
+        </div>
       </div>
       <div className={styles.di}>
         <div className={styles.faviD}>
           <Image
-            src="/dolby-icon-grey.svg"
+            src={
+              window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "/dolby-icon-grey.svg"
+                : "/dolby-icon-black.svg"
+            }
             className={styles.imageD}
             alt=""
             fill={true}
