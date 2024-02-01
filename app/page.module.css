@@ -58,7 +58,7 @@
   }
 }
 
-.marsLabel {
+.label {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -355,7 +355,7 @@
     height: 60vh;
   }
 
-  .fadeLayer {
+  .linear_fade {
     height: 60vh;
   }
 
@@ -417,7 +417,6 @@
   height: 20px;
   margin: 0px 12px 0px 4px;
   width: 2px;
-  background-color: var(--outline);
 }
 
 .title {
@@ -428,7 +427,7 @@
   margin-top: -20px;
 }
 
-.fadeLayer {
+.linear_fade {
   position: absolute;
   height: 70vh;
   width: 100vw;
@@ -539,7 +538,7 @@
 } */
 
 @media (max-width: 1300px) {
-  .fadeLayer {
+  .linear_fade {
     height: 60vh;
   }
 

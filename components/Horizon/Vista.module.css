@@ -1,0 +1,106 @@
+.imageContainer {
+  top: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: -10;
+}
+
+.image {
+  filter: saturate(65%) hue-rotate(160deg);
+  -webkit-filter: saturate(65%) hue-rotate(160deg);
+  z-index: -10;
+}
+
+@media (min-width: 900px) {
+  .video {
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+.video {
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  backdrop-filter: saturate(00%) invert(100%) /* brightness(140%); */;
+  -webkit-backdrop-filter: saturate(00%) invert(100%) /* brightness(140%) */;
+  height: 70vh;
+  width: 100vw;
+  top: 0px;
+  /* animation: filterAnimation 55s infinite; */
+}
+
+/* @keyframes filterAnimation {
+	0% {
+		backdrop-filter: saturate(0%) invert(100%);
+		-webkit-backdrop-filter: saturate(0%) invert(100%);
+	}
+	100% {
+		backdrop-filter: saturate(100%) invert(100%);
+		-webkit-backdrop-filter: saturate(100%) invert(100%);
+	}
+} */
+
+@media (prefers-color-scheme: dark) {
+  .overlay {
+    backdrop-filter: saturate(00%) /* sepia(100%)  */ hue-rotate(590deg);
+    /* brightness(80%); */
+    /* contrast(340%); */
+    -webkit-backdrop-filter: saturate(00%) /* sepia(100%) */ hue-rotate(90deg);
+    /* brightness(100%); */
+    /* contrast(340%); */
+    /* animation: filterAnimation_ 40s infinite; */
+  }
+
+  /* @keyframes filterAnimation_ {
+		0% {
+			backdrop-filter: saturate(0%);
+			-webkit-backdrop-filter: saturate(0%);
+		}
+		100% {
+			backdrop-filter: saturate(100%);
+			-webkit-backdrop-filter: saturate(100%);
+		}
+	} */
+}
+
+@media (max-width: 1300px) {
+  .video {
+    height: 80vh;
+  }
+
+  .imageContainer {
+    height: 60vh;
+  }
+}
+
+.fadeLayer {
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(180deg, transparent 0%, var(--user-bg) 100%);
+  z-index: -3;
+}
+
+@media (max-width: 1300px) {
+  .fadeLayer {
+    height: 60vh;
+  }
+
+  .ai {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .fadeLayer {
+    height: 60vh;
+  }
+}

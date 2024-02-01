@@ -105,10 +105,9 @@
 
   --ai: black;
   --ai-bg: rgb(255, 255, 255);
-
   --user: black;
   --user-bg: #ffffff;
-
+  --inverse: black;
   --font: black;
   --ai-raised: #0d0f1a;
   --image-border: #dfdfdf;
@@ -215,7 +214,6 @@
 
     --ai: white;
     --ai-bg: #000000;
-    /* --user: #0084ff; */
     --user: white;
     --user-bg: #000000;
 
@@ -224,7 +222,7 @@
     --font: white;
     --ai-raised: #0d0f1a;
     --image-border: #bfe0ff;
-
+    --inverse: white;
     --pink: #e1d3d3;
   }
 }
@@ -322,6 +320,9 @@ li {
 
 button {
   cursor: pointer;
+  background-color: unset;
+  color: unset;
+  border: none;
 }
 
 ::placeholder {

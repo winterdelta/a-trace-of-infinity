@@ -1,0 +1,132 @@
+.play_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--outline);
+  border-radius: 100px;
+  padding: 30px;
+  margin-left: 10px;
+}
+
+.languages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.lang {
+  margin: 10px;
+}
+
+.animate_rotate_clockwise {
+  animation: rotate_anti_clockwise 12s infinite linear,
+    colorTransition 0.4s linear;
+  border: 1px dashed var(--inverse);
+}
+
+.animate_rotate_anti_clockwise {
+  animation: rotate_clockwise 12s infinite linear;
+}
+
+@keyframes colorTransition {
+  0% {
+    border-color: var(--outline);
+  }
+  100% {
+    border-color: var(--inverse);
+  }
+}
+
+@keyframes rotate_anti_clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.di,
+.dg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+  height: 30px;
+  /* width: 30px; */
+  /* border: 2px solid var(--secondary-grey); */
+  background-color: none;
+  /* margin-top: 10px; */
+  /* padding-left: 2px; */
+  padding-right: 2px;
+  color: var(--deep-grey);
+  border-radius: 10px;
+  letter-spacing: -0.5px;
+}
+
+.di {
+  margin: -10px 10px -10px 20px;
+}
+
+.faviD,
+.dgi {
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dolby,
+.nova {
+  font-weight: 700;
+  color: var(--secondary-grey);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nova {
+  margin-left: 4px;
+}
+
+.dgi {
+  width: 16px;
+  height: 16px;
+}
+
+.imageD {
+  border: none;
+}

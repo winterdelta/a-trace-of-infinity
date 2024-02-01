@@ -1,4 +1,4 @@
-import Playlist from "@/components/Playlist/Playlist";
+import Horizon from "@/components/Horizon/Vista";
 import styles from "./page.module.css";
 import AI from "@/components/ai";
 import {
@@ -9,9 +9,7 @@ import {
 } from "next/font/google";
 import React from "react";
 import { FlightInternational, Sustainability } from "@carbon/icons-react";
-import PreBuilt from "@/components/Shop/prebuilt";
-import Copy from "@/components/AI/Copy";
-import Image from "next/image";
+import Multi_lingual from "@/components/Multi-lingual/Main";
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -38,16 +36,12 @@ const ar = IBM_Plex_Sans_Arabic({
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.fadeLayer} />
-      <Playlist />
-      <div className={styles.ai}>
-        <div className={styles.halucinera}>
-          <div className={styles.icono}></div>
-        </div>
-      </div>
-      <div className={styles.title}>
+      <div className={styles.linear_fade} />
+      <Horizon />
+      <Multi_lingual />
+      {/* <div className={styles.title}>
         <span className={styles.headline}>
-          <span>AIs</span>
+          <span className={styles.headline}>AIs</span>
           <span className={styles.urduH}>
             <span className={urdu.className}>مصنوعی ذہانتیں</span>
           </span>
@@ -60,11 +54,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.title}>
-        <div className={styles.styllcraft}>
-          <div className={styles.dividerHeader} />
-        </div>
-      </div>
+
+      <div className={styles.dividerHeader} />
       <div className={styles.itemRow}>
         <div className={styles.items}>
           <div className={styles.item}>
@@ -93,16 +84,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+       */}
       <div className={styles.aiContainer}>
         <span className={styles.headline}>Chat with Client Services</span>
       </div>
       <div className={styles.chatContainer}>
         <AI />
       </div>
-      <div className={styles.title}>
-        <div className={styles.marsLabel}>
-          <span className={styles.logo}>W∆</span> &apos;TRACES OF INFINITY&apos;
-        </div>
+      <div className={styles.label}>
+        <span className={styles.logo}>W∆</span> &apos;TRACES OF INFINITY&apos;
       </div>
     </main>
   );

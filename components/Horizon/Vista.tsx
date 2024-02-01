@@ -1,6 +1,6 @@
-import styles from "./Playlist.module.css";
+import styles from "./Vista.module.css";
 
-export default function Playlist() {
+export default function Vista() {
   return (
     <div className={styles.imageContainer}>
       <video className={styles.video} autoPlay playsInline muted loop>
