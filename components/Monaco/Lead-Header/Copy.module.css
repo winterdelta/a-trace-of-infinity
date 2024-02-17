@@ -126,7 +126,7 @@
   /* font-style: italic; */
 }
 
-.ai::first-letter {
+/* .ai::first-letter {
   float: left;
   font-size: 76px;
   color: var(--font-grey);
@@ -134,7 +134,7 @@
   padding-top: 16px;
   padding-right: 10px;
   font-weight: 500;
-}
+} */
 
 .payTiers {
   display: flex;

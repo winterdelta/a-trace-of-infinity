@@ -2,7 +2,7 @@
   top: 0;
   overflow: hidden;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   z-index: -10;
 }
@@ -22,7 +22,7 @@
 
 .video {
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   object-fit: cover;
 }
@@ -31,7 +31,7 @@
   position: absolute;
   backdrop-filter: saturate(00%) invert(100%) /* brightness(140%); */;
   -webkit-backdrop-filter: saturate(00%) invert(100%) /* brightness(140%) */;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   top: 0px;
   /* animation: filterAnimation 55s infinite; */
@@ -83,7 +83,7 @@
 
 .fadeLayer {
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   background: linear-gradient(180deg, transparent 0%, var(--user-bg) 100%);
   z-index: -3;

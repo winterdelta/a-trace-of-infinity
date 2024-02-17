@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 const ibm = IBM_Plex_Sans({
   subsets: ["latin"],
-  weight: ["200", "500", "700"],
+  weight: ["700"],
 });
 
 export default function Chat() {

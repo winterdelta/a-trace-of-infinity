@@ -329,7 +329,7 @@
   top: 0;
   position: fixed;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   background: linear-gradient(180deg, transparent 00%, var(--user-bg) 100%);
   z-index: -10;
 }
@@ -426,7 +426,7 @@
 
 .linear_fade {
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   background: linear-gradient(180deg, transparent 0%, var(--user-bg) 100%);
   z-index: -3;

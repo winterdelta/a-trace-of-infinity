@@ -92,7 +92,7 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --deep-grey: #232327;
+  --deep-grey: #e5e5e5;
   --shallow-deep-grey: #3a3a40;
   --secondary-grey: #6f6f6f;
   --font-grey: #5e5e5e;
@@ -200,7 +200,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
 
-    --deep-grey: #232327;
+    --deep-grey: #1b1b1b;
     --shallow-deep-grey: #3a3a40;
     --secondary-grey: #6f6f6f;
     --font-grey: #aaaaaa;

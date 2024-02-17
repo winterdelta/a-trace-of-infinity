@@ -1159,6 +1159,7 @@ A .AILinkContainer {
   flex-direction: row;
   width: calc(100% - 20px);
   margin: 10px 10px 10px 10px;
+  font-weight: 700;
 }
 
 .AIHelper {

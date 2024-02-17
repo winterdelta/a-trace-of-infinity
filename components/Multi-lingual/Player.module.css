@@ -1,13 +1,17 @@
-.play_btn {
+.play_btn,
+.playing {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1000px;
-  /* padding: 30px; */
   height: 84px;
   width: 84px;
   margin-left: 10px;
   border: 1px dashed var(--secondary-grey);
+}
+
+.playing {
+  border: 1px solid var(--inverse);
 }
 
 .languages {
@@ -24,8 +28,8 @@
 
 .lang {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
   text-decoration-color: var(--inverse);
 }
 
@@ -41,20 +45,18 @@
 
 .animate_rotate_clockwise {
   animation: rotate_anti_clockwise 12s infinite linear;
-  border: 1px dashed var(--secondary-grey);
 }
 
 .animate_rotate_anti_clockwise {
-  animation: rotate_clockwise 12s infinite linear,
-    animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
+  animation: rotate_clockwise 12s infinite linear;
 }
 
 .animate_pulsate {
-  animation: animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
+  animation: animate_pulsate 2s infinite;
 }
 
 .animate_pulsate_1s {
-  animation: animate_pulsate 2s infinite cubic-bezier(0.19, 1, 0.22, 1);
+  animation: animate_pulsate 1s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @keyframes rotate_anti_clockwise {
@@ -98,7 +100,7 @@
 
 .player {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
@@ -167,5 +169,24 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  /* margin-left: 10px; */
+}
+
+.headphones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+}
+
+.preview {
+  color: var(--deep-grey);
+  text-decoration: none;
+  cursor: text;
+}
+
+@media (prefers-color-scheme: dark) {
+  .preview {
+    color: var(--deep-grey);
+  }
 }
