@@ -74,7 +74,7 @@ export default function Languages({
             lang === language.name ? styles.lang : styles.lang_unselected
           }
         >
-          {language.name}
+          <span className={english.className}>{language.name}</span>
         </button>
       ))}
       {languages.slice(3, 6).map((language) => (
