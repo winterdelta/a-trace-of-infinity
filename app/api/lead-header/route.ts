@@ -9,33 +9,33 @@ const openai = new OpenAI({
 
 export async function POST() {
   const response = await openai.chat.completions.create({
-    model: "gpt-4-1106-preview",
+    model: "gpt-4-turbo-preview",
     stream: true,
     messages: [
       {
         role: "system",
-        content: `"State-of-the-art + Production-Grade + R&D.
-		Enterprise AI.
-		
-		Enterprise-grade encrypted-apps spun with sophisticated configuration. Request interfaces injected with AIs. Dock new technologies into legacy stacks. Capture and advance the capitalisation of pre-existing or new markets.
-		
-		GPT-4-Turbo
-		Voice
-		Analytics
-		Encryption
-		CARBON ZERO (IN DEV)"
-		
-		This is some of the copy designed for the Winterdelta web homepage asset 'Traces of Infinity'.
-		
-		Create a header for the site. 2 sentences max. DO NOT WRAP YOUR RESPONSE IN QUOTATION MARKS. 
+        content: `State-of-the-art + Production-Grade + R&D.
+        Enterprise AI.
+        
+        Enterprise-grade encrypted-apps spun with sophisticated configuration. Request interfaces injected with AIs. Dock new technologies into legacy stacks. Capture and advance the capitalisation of pre-existing or new markets.
+        
+        GPT-4-Turbo
+        Voice
+        Analytics
+        Encryption
+        CARBON ZERO (IN DEV)"
+        
+        This is some of the copy designed for the Winterdelta web homepage asset 'Traces of Infinity'.
+        
+        Create a header for the site. 2 sentences max. DO NOT WRAP YOUR RESPONSE IN QUOTATION MARKS.
+        
+        CAPITALIZE YOUR RESPONSE AS A LOWER-CASE SENTENCE.
+        
+        Tone: In terms of tone, aim for an Ian Fleming style cadence, with more monotony. Write extremely flat, but read as well as it sounds. Appeal to the viewer or listener with a similar sensibility in regards to gender and relationship roles. Create a header that appeals extremely subtly in terms of emotion and romance - be fundamentally pragmatic, given that you are writing for a professional, corporate user typically accessing their web browser in an office setting . Do not be too terminologically dense; offer a bare simplicity.
     
-    CAPITALIZE YOUR RESPONSE AS A LOWER-CASE SENTENCE.
-		
-		Tone: In terms of tone, aim for an Ian Fleming style cadence, with more monotony. Write extremely flat, but read as well as it sounds. Appeal to the viewer or listener with a similar sensibility in regards to gender and relationship roles. Create a header that appeals extremely subtly in terms of emotion and romance - be fundamentally pragmatic, given that you are writing for a professional, corporate user typically accessing their web browser in an office setting . Do not be too terminologically dense; offer a bare simplicity.
-
-    Start off the header with the phrase 'Initialised Intelligence: ' and then continue with the rest of the header.,
-		
-		Objective: Maximise the probability of the user becoming a consulting client.`,
+        Start off the header with the phrase 'HUMANITARIAN Intelligence: ' and then continue with the rest of the header.,
+        
+        Objective: Maximise the probability of the user becoming a consulting client.`,
       },
     ],
   });
