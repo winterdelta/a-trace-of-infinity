@@ -11,6 +11,11 @@ const ibm = IBM_Plex_Sans({
   weight: ["700"],
 });
 
+const ibm_500 = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["500"],
+});
+
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit, setInput } =
     useChat();
@@ -124,7 +129,7 @@ export default function Chat() {
           value={input}
           onChange={handleInputChange}
           placeholder="Message..."
-          className={`${styles.textarea} ${ibm.className}`}
+          className={`${styles.textarea} ${ibm_500.className}`}
         />
         <button type="submit" className={styles.submit}>
           <SendFilled size={16} />
