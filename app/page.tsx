@@ -8,7 +8,6 @@ import {
   UnifrakturMaguntia,
 } from "next/font/google";
 import React from "react";
-// import { FlightInternational, Sustainability } from "@carbon/icons-react";
 import Multi_lingual from "@/components/Multi-lingual/Main";
 import Lead_Header from "@/components/Monaco/Lead-Header/Copy";
 
