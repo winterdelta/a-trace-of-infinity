@@ -189,8 +189,8 @@ export default function Player({
             <span
               className={`${
                 play_status && totalRemainingSeconds % 2 === 0
-                  ? styles.cursor_on
-                  : styles.cursor_off
+                  ? styles.cursor_off
+                  : styles.cursor_on
               }`}
             >
               :
