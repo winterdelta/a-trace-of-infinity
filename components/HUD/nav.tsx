@@ -5,22 +5,30 @@ import Link from "next/link";
 import Pathname from "./pathname";
 import { CircleStroke } from "@carbon/icons-react";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nav() {
   const [isScrollLocked, setIsScrollLocked] = useState(false);
   const [isBackdropVisible, setIsBackdropVisible] = useState(false);
 
-  const handleButtonClick = () => {
-    document.body.classList.toggle("scroll-locked");
-    setIsScrollLocked((prevIsScrollLocked) => !prevIsScrollLocked);
-    setIsBackdropVisible((prevIsBackdropVisible) => !prevIsBackdropVisible);
+  const toggle_backdrop = () => {
+    setIsScrollLocked(!isScrollLocked);
+    document.body.style.overflow = isScrollLocked ? "auto" : "hidden";
+    setIsBackdropVisible(!isBackdropVisible);
+  };
 
-    console.log(
-      "isScrollLocked",
-      isScrollLocked,
-      "isBackdropVisible",
-      isBackdropVisible
-    );
+  const sharedTransition = {
+    duration: 0.3,
+    ease: [0.42, 0, 0.58, 1],
+  };
+
+  const backdropVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      y: "0%",
+      opacity: 0.8,
+      transition: sharedTransition,
+    },
   };
 
   return (
@@ -34,17 +42,23 @@ export default function Nav() {
         </div>
       </div>
       <div className={styles.menu}>
-        <button onClick={handleButtonClick} className={styles.w_}>
+        <button onClick={toggle_backdrop} className={styles.w_}>
           <span className={styles.circle_icon}>
             <CircleStroke size={16} />
           </span>
         </button>
       </div>
-      <div
-        className={`${styles.backdrop} ${
-          isBackdropVisible ? styles.backdropVisible : ""
-        }`}
-      />
+      <AnimatePresence>
+        {isBackdropVisible && (
+          <motion.div
+            className={`${styles.backdrop}`}
+            variants={backdropVariants}
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0 }}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }

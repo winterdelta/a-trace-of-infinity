@@ -468,6 +468,11 @@
   dependencies:
     server-only "^0.0.1"
 
+"@vercel/edge@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@vercel/edge/-/edge-1.1.1.tgz#9b2fc0081dfe95db8b4c3598275721b1ad85e43f"
+  integrity sha512-NtKiIbn9Cq6HWGy+qRudz28mz5nxfOJWls5Pnckjw1yCfSX8rhXdvY/il3Sy3Zd5n/sKCM2h7VSCCpJF/oaDrQ==
+
 abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
@@ -1347,6 +1352,13 @@ formdata-node@^4.3.2:
   dependencies:
     node-domexception "1.0.0"
     web-streams-polyfill "4.0.0-beta.3"
+
+framer-motion@^11.2.6:
+  version "11.2.6"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.2.6.tgz#ab693b24d1f6cf34ef83494ab2df59fd39b7c87e"
+  integrity sha512-XUrjjBt57e5YoHQtjwc3eNchFBuHvIgN/cS8SC4oIaAn2J/0+bLanUxXizidJKZVeHJam/JrmMnPRjYMglVn5g==
+  dependencies:
+    tslib "^2.4.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
