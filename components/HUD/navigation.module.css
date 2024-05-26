@@ -589,3 +589,23 @@
     color: white;
   }
 }
+
+/* navigation.module.css */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.backdropVisible {
+  opacity: 0.8;
+  pointer-events: auto;
+}

@@ -8,10 +8,19 @@ import { useState } from "react";
 
 export default function Nav() {
   const [isScrollLocked, setIsScrollLocked] = useState(false);
+  const [isBackdropVisible, setIsBackdropVisible] = useState(false);
 
   const handleButtonClick = () => {
-    setIsScrollLocked(!isScrollLocked);
     document.body.classList.toggle("scroll-locked");
+    setIsScrollLocked((prevIsScrollLocked) => !prevIsScrollLocked);
+    setIsBackdropVisible((prevIsBackdropVisible) => !prevIsBackdropVisible);
+
+    console.log(
+      "isScrollLocked",
+      isScrollLocked,
+      "isBackdropVisible",
+      isBackdropVisible
+    );
   };
 
   return (
@@ -31,6 +40,11 @@ export default function Nav() {
           </span>
         </button>
       </div>
+      <div
+        className={`${styles.backdrop} ${
+          isBackdropVisible ? styles.backdropVisible : ""
+        }`}
+      />
     </>
   );
 }
