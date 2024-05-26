@@ -563,7 +563,7 @@
 }
 
 .circle_icon {
-  filter: drop-shadow(0px 0px 10px #ffffff);
+  filter: drop-shadow(0px 0px 5px #ffffff);
   display: flex;
   justify-content: center;
   align-items: center;
