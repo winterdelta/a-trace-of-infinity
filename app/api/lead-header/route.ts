@@ -22,8 +22,7 @@ export async function POST(request: Request) {
         The homepage is of the build version: 'A Trace of Infinity.'
         
         The user is based in ${city}.
-        
-        The company is based in Manchester, UK
+        The company is based in Manchester, UK.
         
         The following article provides insight into the company and offers its origin story. but is not featured on the homepage.
         
