@@ -59,7 +59,7 @@ export default function AI() {
         {messages.map((m) => (
           <div className={styles.mai} key={m.id}>
             <div className={sans.className}>
-            <span>{m.content}</span>
+              <span>{m.content}</span>
             </div>
           </div>
         ))}
