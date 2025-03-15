@@ -1,6 +1,6 @@
-import Horizon from "@/components/Horizon/Vista";
+import Horizon from "@/complication/Horizon/Vista";
 import styles from "./page.module.css";
-import AI from "@/components/Monaco/Chat/ai";
+import AI from "@/complication/Monaco/Chat/ai";
 import {
   IBM_Plex_Mono,
   IBM_Plex_Sans_Arabic,
@@ -8,8 +8,8 @@ import {
   UnifrakturMaguntia,
 } from "next/font/google";
 import React from "react";
-import Multi_lingual from "@/components/Multi-lingual/Main";
-import Lead_Header from "@/components/Monaco/Lead-Header/Copy";
+import Multi_lingual from "@/complication/Multi-lingual/Main";
+import Lead_Header from "@/complication/Monaco/Lead-Header/Copy";
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],

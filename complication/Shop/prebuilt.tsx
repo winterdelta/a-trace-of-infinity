@@ -21,7 +21,7 @@ import {
   Noto_Nastaliq_Urdu,
 } from "next/font/google";
 import Link from "next/link";
-import Click from "@/components/Shop/click";
+import Click from "@/complication/Shop/click";
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],

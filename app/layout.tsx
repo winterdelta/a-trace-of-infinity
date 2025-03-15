@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/HUD/nav";
+import Nav from "@/complication/HUD/index";
 
 const ibm = IBM_Plex_Sans({
   subsets: ["latin"],
