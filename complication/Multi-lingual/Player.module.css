@@ -7,7 +7,7 @@
   height: 84px;
   width: 84px;
   margin-left: 10px;
-  border: 1px dashed var(--secondary-grey);
+  border: 1px dotted var(--font);
 }
 
 .playing {
