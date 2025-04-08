@@ -228,7 +228,7 @@
   /* filter: drop-shadow(0px 0px 6px var(--font)); */
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
-  border: 1px dotted var(--border-tourbillon);
+  border: 1px dotted var(--outline);
   /* margin-right: -6px; */
 }
 

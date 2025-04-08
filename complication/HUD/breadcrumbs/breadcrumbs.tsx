@@ -96,7 +96,7 @@ export default function Breadcrumbs({
               style={{
                 color: "var(--font)",
               }}
-              initial={{ borderColor: "rgba(125, 125, 125, 0)" }}
+              // initial={{ borderColor: "red" }}
               // animate={{
               //   borderColor:
               //     iconIndex === 4
