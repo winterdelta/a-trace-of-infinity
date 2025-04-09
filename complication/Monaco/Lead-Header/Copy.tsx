@@ -21,49 +21,53 @@ const sans = IBM_Plex_Sans({
 const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
 
 export default function AI() {
-  const { messages, append } = useChat({
-    api: "/api/lead-header",
-  });
-
-  const handleSubmit = useCallback(
-    (
-      // e: React.FormEvent<HTMLFormElement>,
-      { options, functions, function_call }: ChatRequestOptions = {},
-      metadata?: Object
-    ) => {
-      // e.preventDefault();
-      append(
-        {
-          content: "Respond: ",
-          role: "user",
-          createdAt: new Date(),
-        },
-        { options, functions, function_call }
-      );
-    },
-    [append]
-  );
-
-  useEffect(() => {
-    append({
-      role: "system",
-      content: "",
-    });
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return (
-    <div className={styles.ai}>
-      <div>
-        {messages.map((m) => (
-          <div className={styles.mai} key={m.id}>
-            <div className={sans.className}>
-              <span>{m.content}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  return <></>;
 }
+
+// export default function AI() {
+//   const { messages, append } = useChat({
+//     api: "/api/lead-header",
+//   });
+
+//   const handleSubmit = useCallback(
+//     (
+//       // e: React.FormEvent<HTMLFormElement>,
+//       { options, functions, function_call }: ChatRequestOptions = {},
+//       metadata?: Object
+//     ) => {
+//       // e.preventDefault();
+//       append(
+//         {
+//           content: "Respond: ",
+//           role: "user",
+//           createdAt: new Date(),
+//         },
+//         { options, functions, function_call }
+//       );
+//     },
+//     [append]
+//   );
+
+//   useEffect(() => {
+//     append({
+//       role: "system",
+//       content: "",
+//     });
+
+//     // eslint-disable-next-line react-hooks/exhaustive-deps
+//   }, []);
+
+//   return (
+//     <div className={styles.ai}>
+//       <div>
+//         {messages.map((m) => (
+//           <div className={styles.mai} key={m.id}>
+//             <div className={sans.className}>
+//               <span>{m.content}</span>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
