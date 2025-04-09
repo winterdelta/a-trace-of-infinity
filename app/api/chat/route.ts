@@ -9,10 +9,6 @@ const openai = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY!,
 });
 
-// const openai = new OpenAI({
-//   apiKey: process.env.OPENAI_API_KEY!,
-// });
-
 export async function POST(req: Request) {
 
   const { messages }: { messages: UIMessage[] } = await req.json();
