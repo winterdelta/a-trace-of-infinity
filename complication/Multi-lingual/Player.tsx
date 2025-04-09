@@ -176,9 +176,9 @@ export default function Player({
           }`}
         >
           {!play_status ? (
-            <PlayFilledAlt size={24} />
+            <PlayFilledAlt size={16} />
           ) : (
-            <PauseFilled size={24} />
+            <PauseFilled size={16} />
           )}
         </div>
       </button>

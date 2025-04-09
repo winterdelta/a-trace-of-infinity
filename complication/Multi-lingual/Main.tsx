@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Languages from "./Languages";
 import Player from "./Player";
-import styles from "@/components/Multi-lingual/Player.module.css";
+import styles from "@/complication/Multi-lingual/Player.module.css";
 // import Controls from "./Optional_Control_Symbols";
 
 export default function Main() {
