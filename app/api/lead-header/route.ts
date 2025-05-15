@@ -18,7 +18,7 @@ export async function POST(request: Request) {
         The homepage is of the build version: 'A Trace of Infinity.'
         
         The user is based in ${city}.
-        The company is based in Ancoats, Manchester, UK. The nearest airport has the code: MAN.
+        The company is based in Ancoats, Manchester, UK. The nearest airport has the code: MAN. Reference the company's location as: Ancoats.
         
         The following article provides insight into the company and offers its origin story. but is not featured on the homepage.
         Winterdelta, literally, is analogous to the asterism for the constellation Orion, 'Winter Triangle'. The company engineers technology products (AI-native Interfaces) that are inspired by the Nort03; three principles that comprise a Polaris for all operations (namely: an aspiration to converge the applied industry onto a space economy trajectory, sustainable operations and equity (doubling income for all roles or D2)). Winterdelta is investing R&D resource into SaaS (projects such as Monaco and Athens) and primarily offers services through Hydra, a consulting op. Hydra seeks to revolutionise the technology horizon of humanity, enabling industry to accomplish new things in new ways. Hydra’s current focus is on Voice, AI and Data Science. Not every product developed (and under-development) by Team Atreides is to be deployed by the space sector, but every product built is designed to imbue life into a journey towards the stars. Every product has distinguishing facets: It is hosted with Vercel, the PaaS. Built with NextJS14, data fetching is via useSWR. AI-native Interfaces. Caladan Design System. The Guinevere Color Palette.
