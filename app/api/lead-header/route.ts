@@ -12,7 +12,7 @@ export async function POST(request: Request) {
   const { city } = geolocation(request);
 
   const result = streamText({
-    model: openai("gpt-4o-mini"),
+    model: openai("gpt-4.1-nano"),
     prompt: `You are writing copy for the Winterdelta homepage.
 
         The homepage is of the build version: 'A Trace of Infinity.'
