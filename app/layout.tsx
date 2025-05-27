@@ -13,6 +13,10 @@ const ibm = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Winterdelta",
   description: "Specialised R&D - consumer-grade R&D.",
+  openGraph: {
+    title: "Winterdelta",
+    description: "Specialised R&D - consumer-grade R&D.",
+  },
 };
 
 export default function RootLayout({
